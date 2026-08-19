@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color palette — deliberately not the generic navy+gold real-estate look. */
+  --color-ink: #1e2622;
+  --color-shell: #f6f2ea;
+  --color-bay-teal: #2e4a4c;
+  --color-bay-teal-dark: #223638;
+  --color-marsh: #7c8b6f;
+  --color-clay: #b5654a;
+  --color-mist: #dde3de;
+  --color-dusty-blue: #6a7f8c;
+
+  /* Typography */
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  /* Type scale */
+  --text-display-xl: 4rem;
+  --text-display-xl--line-height: 1.05;
+  --text-display-lg: 3rem;
+  --text-display-lg--line-height: 1.08;
+  --text-display-md: 2.25rem;
+  --text-display-md--line-height: 1.12;
+  --text-display-sm: 1.75rem;
+  --text-display-sm--line-height: 1.2;
+
+  --animate-fade-in: fade-in 0.5s ease-out;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-mist);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-shell);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--color-bay-teal);
+    color: var(--color-shell);
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" width="1600" height="1067" role="img" aria-label="lighthouse-point-view"><defs><linearGradient id="g14" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#31414a" stop-opacity="1"/><stop offset="1" stop-color="#2E4A4C" stop-opacity="1"/></linearGradient></defs><rect width="1600" height="1067" fill="url(#g14)"/><path d="M0.0,681.5 L133.3,686.2 L266.7,689.1 L400.0,689.2 L533.3,686.3 L666.7,681.7 L800.0,677.0 L933.3,674.0 L1066.7,673.9 L1200.0,676.6 L1333.3,681.3 L1466.7,686.0 L1600.0,689.0" fill="none" stroke="#F6F2EA" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round"/><path d="M0.0,731.6 L133.3,733.5 L266.7,730.9 L400.0,724.7 L533.3,717.3 L666.7,711.6 L800.0,709.5 L933.3,712.1 L1066.7,718.2 L1200.0,725.6 L1333.3,731.4 L1466.7,733.5 L1600.0,731.1" fill="none" stroke="#F6F2EA" stroke-opacity="0.25" stroke-width="2" stroke-linecap="round"/><g opacity="0.6">
+    <path d="M1186,681.54 L1192,561.54 L1208,561.54 L1214,681.54 Z" fill="#F6F2EA"/>
+    <rect x="1190" y="541.54" width="20" height="20" fill="#F6F2EA"/>
+    <path d="M1188,541.54 L1200,521.54 L1212,541.54 Z" fill="#F6F2EA"/>
+    <line x1="1192" y1="586.54" x2="1208" y2="586.54" stroke="#F6F2EA" stroke-width="2"/>
+    <line x1="1190" y1="621.54" x2="1210" y2="621.54" stroke="#F6F2EA" stroke-width="2"/>
+  </g><path d="M24,995 L24,1043 L72,1043" fill="none" stroke="#F6F2EA" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M1528,24 L1576,24 L1576,72" fill="none" stroke="#F6F2EA" stroke-opacity="0.18" stroke-width="2"/></svg>

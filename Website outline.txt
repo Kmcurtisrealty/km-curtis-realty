@@ -1,0 +1,1244 @@
+# KM Curtis Realty — Claude Code Website Master Specification
+
+## WEBSITE REFERENCE & DESIGN DIRECTION
+
+### Reference Website
+
+Use the following website as a **UX, information architecture, functionality, and visual-quality reference**:
+
+https://jeanniemillerannapolis.com/properties
+
+The specific reference section is the Portfolio / Properties experience.
+
+The goal is to create a website for KM Curtis Realty that has a similar level of sophistication, organization, property presentation, and user experience.
+
+### IMPORTANT — DO NOT CLONE THE WEBSITE
+
+Use the reference site only as inspiration for:
+
+* Overall quality
+* Information architecture
+* Property presentation
+* Listing cards
+* Featured listings
+* Past transactions
+* Property search
+* Community/location pages
+* Lead-generation structure
+* Navigation concepts
+* CTA placement
+* Premium real estate aesthetic
+* Individual property detail pages
+
+Do NOT copy:
+
+* Text
+* Images
+* Logos
+* Branding
+* CSS
+* Source code
+* Proprietary design elements
+* Exact layouts
+* Testimonials
+* Property information
+* Client information
+
+The finished website must be an original KM Curtis Realty experience.
+
+---
+
+# 1. OVERALL DESIGN OBJECTIVE
+
+Create a premium real estate website inspired by the polished, editorial feel of high-end Annapolis real estate websites.
+
+The website should combine:
+
+**Luxury Real Estate + Chesapeake Bay Lifestyle + Annapolis Local Expertise + Relocation Resource + Property Search + American Dream TV**
+
+The visual experience should feel:
+
+* Sophisticated
+* Editorial
+* Coastal
+* Premium
+* Clean
+* Modern
+* Warm
+* Local
+* Aspirational
+* Highly visual
+
+Avoid making the website look like a generic real estate template.
+
+---
+
+# 2. PROPERTY-FIRST WEBSITE EXPERIENCE
+
+Property search should be a major feature of the website.
+
+The reference site uses a portfolio structure featuring:
+
+* Featured Listings
+* Past Transactions
+* Individual property pages
+* Search Homes
+* Location pages
+
+Recreate this concept for KM Curtis Realty with an original design.
+
+The properties experience should be one of the strongest parts of the website.
+
+---
+
+# 3. PRIMARY NAVIGATION
+
+Use a clean navigation structure:
+
+### HOME
+
+### BUY
+
+### SELL
+
+### RELOCATE
+
+### PROPERTIES
+
+### COMMUNITIES
+
+### LIFESTYLE
+
+### AMERICAN DREAM TV
+
+### ABOUT
+
+### RESOURCES
+
+### CONTACT
+
+On desktop, the navigation should remain clean and uncluttered.
+
+On mobile, use a premium full-screen or slide-out navigation.
+
+---
+
+# 4. PROPERTIES PAGE
+
+Create:
+
+`/properties`
+
+This should function as the primary property portfolio.
+
+## Hero
+
+Headline:
+
+"Find Your Place in Maryland"
+
+Supporting copy:
+
+"Explore homes, waterfront properties, and distinctive communities throughout Annapolis and the Chesapeake Bay region."
+
+Primary CTA:
+
+"Search Homes"
+
+Secondary CTA:
+
+"Let's Connect"
+
+---
+
+# 5. FEATURED LISTINGS
+
+Create a prominent:
+
+## Featured Listings
+
+section.
+
+Each listing card should include:
+
+* Large property image
+* Status badge
+* Address
+* City
+* Price
+* Bedrooms
+* Bathrooms
+* Square footage
+* Property type
+* CTA
+
+CTA:
+
+"View Property"
+
+Cards should have subtle hover interactions.
+
+Do not over-animate.
+
+The photography should be the dominant visual element.
+
+---
+
+# 6. PROPERTY CARD DESIGN
+
+Property cards should feel premium.
+
+Suggested structure:
+
+---
+
+[ LARGE PROPERTY IMAGE ]
+
+FOR SALE
+
+$895,000
+
+123 Example Street
+Annapolis, MD 21401
+
+3 Beds | 2.5 Baths | 2,450 Sq Ft
+
+VIEW PROPERTY
+
+---
+
+Use clean typography.
+
+Avoid excessive borders.
+
+Use generous whitespace.
+
+---
+
+# 7. FEATURED PROPERTY SECTION
+
+On the homepage, include a featured property carousel or grid.
+
+Headline:
+
+"Featured Properties"
+
+Supporting copy:
+
+"Explore a selection of homes currently available throughout Annapolis and the surrounding Chesapeake Bay communities."
+
+CTA:
+
+"View All Properties"
+
+---
+
+# 8. PAST TRANSACTIONS
+
+Create a dedicated section on the properties page:
+
+## Past Transactions
+
+This is important for demonstrating experience and results.
+
+Each sold property card should include:
+
+* Property image
+* SOLD badge
+* Address
+* City
+* Sale price
+* Beds
+* Baths
+* Square footage
+* Property type
+* View Property
+
+Do not fabricate sales.
+
+Use real transaction data only when provided or supplied through a verified MLS/IDX source.
+
+---
+
+# 9. PROPERTY FILTERING
+
+Create a sophisticated property search interface.
+
+Filters should include:
+
+### Location
+
+Search by:
+
+* Address
+* City
+* Neighborhood
+* ZIP code
+
+### Property Type
+
+* Residential
+* Townhouse
+* Condo
+* Land
+* Multi-Family
+* Commercial
+* Other
+
+### Price
+
+Minimum price
+
+Maximum price
+
+### Bedrooms
+
+1+
+
+2+
+
+3+
+
+4+
+
+5+
+
+### Bathrooms
+
+1+
+
+2+
+
+3+
+
+4+
+
+5+
+
+### Square Feet
+
+Minimum
+
+Maximum
+
+### Status
+
+* For Sale
+* Coming Soon
+* Pending
+* Active Under Contract
+* Sold
+
+### Additional Filters
+
+Design architecture so future filters can include:
+
+* Waterfront
+* Pool
+* Garage
+* Dock
+* New Construction
+* Luxury
+* Open House
+
+---
+
+# 10. SEARCH UX
+
+The search experience should be intuitive.
+
+Allow visitors to:
+
+1. Enter a location
+2. Select filters
+3. View results
+4. Open a property
+5. Save or inquire about a property
+
+The search interface should work beautifully on mobile.
+
+Mobile filters should open in a dedicated filter panel or drawer.
+
+---
+
+# 11. PROPERTY DETAIL PAGE
+
+Every property should have a dedicated page.
+
+Example URL:
+
+`/properties/[slug]`
+
+The property page should include:
+
+## Hero Gallery
+
+Large image gallery.
+
+Include:
+
+* Main image
+* Thumbnail navigation
+* Fullscreen gallery
+* Swipe support on mobile
+
+---
+
+## Property Header
+
+Display:
+
+STATUS
+
+PRICE
+
+ADDRESS
+
+CITY / STATE / ZIP
+
+---
+
+## Property Stats
+
+Large visual statistics:
+
+BEDROOMS
+
+BATHROOMS
+
+SQ FT
+
+LOT SIZE
+
+YEAR BUILT
+
+---
+
+## Property Description
+
+Display the full property description.
+
+---
+
+## Features & Amenities
+
+Create organized categories.
+
+### Interior
+
+### Exterior
+
+### Property
+
+### Community
+
+### Waterfront
+
+### Appliances
+
+### Parking
+
+Only display categories when data exists.
+
+---
+
+# 12. PROPERTY DETAILS
+
+Create expandable sections for:
+
+* Interior
+* Exterior
+* Area & Lot
+* Financial
+* Community
+* Utilities
+* Features
+
+This creates a premium property-information experience.
+
+---
+
+# 13. PROPERTY MAP
+
+Include an optional map component.
+
+Do not expose unnecessarily precise location information for listings where the MLS feed does not permit it.
+
+Design the component so a future map provider can be integrated.
+
+---
+
+# 14. PROPERTY LEAD CTA
+
+Every property page should contain a prominent CTA.
+
+Example:
+
+## Interested in This Property?
+
+"Let's schedule a private showing or talk through whether this home is the right fit for you."
+
+Buttons:
+
+"Schedule a Showing"
+
+"Ask a Question"
+
+"Let's Connect"
+
+---
+
+# 15. PROPERTY INQUIRY FORM
+
+Property inquiry form:
+
+First Name
+
+Last Name
+
+Email
+
+Phone
+
+Message
+
+Optional:
+
+"I'm interested in this property."
+
+The form should automatically capture:
+
+* Property address
+* Property ID
+* Property URL
+* Source page
+
+This information should be available for future CRM integration.
+
+---
+
+# 16. SIMILAR PROPERTIES
+
+At the bottom of each property page:
+
+## You May Also Like
+
+Show 3–6 similar properties.
+
+Match based on:
+
+* Location
+* Price
+* Property type
+* Bedrooms
+* Bathrooms
+
+---
+
+# 17. COMMUNITY / LOCATION SYSTEM
+
+The reference website uses dedicated location pages with property search functionality.
+
+Create the same **concept**, but with original KM Curtis Realty design.
+
+Each community should have:
+
+* Hero image
+* Community overview
+* Lifestyle
+* Location
+* Property types
+* Waterfront information where applicable
+* Current properties
+* Recent sales
+* Local attractions
+* Relocation information
+* CTA
+
+---
+
+# 18. COMMUNITY PROPERTY SEARCH
+
+Each community page should automatically display relevant properties.
+
+For example:
+
+`/communities/annapolis`
+
+should display:
+
+## Homes for Sale in Annapolis
+
+with property cards and filters.
+
+Similarly:
+
+`/communities/severna-park`
+
+`/communities/edgewater`
+
+`/communities/cape-st-claire`
+
+etc.
+
+---
+
+# 19. COMMUNITY DATA ARCHITECTURE
+
+Create reusable community data.
+
+Example conceptual structure:
+
+Community:
+
+* Name
+* Slug
+* Hero image
+* Description
+* Lifestyle
+* Waterfront
+* Schools
+* Commute
+* Neighborhoods
+* Featured properties
+* SEO title
+* SEO description
+
+Do not hard-code individual community pages separately.
+
+Create a reusable template.
+
+---
+
+# 20. INITIAL COMMUNITY PAGES
+
+Build architecture for:
+
+* Annapolis
+* Eastport
+* West Annapolis
+* Hillsmere
+* Cape St. Claire
+* Broadneck
+* Severna Park
+* Arnold
+* Edgewater
+* Mayo
+* Galesville
+* Shady Side
+* Crofton
+* Davidsonville
+* Pasadena
+* Millersville
+
+Additional communities should be easy to add.
+
+---
+
+# 21. HOMEPAGE PROPERTY EXPERIENCE
+
+The homepage should have several property-driven sections.
+
+## Featured Properties
+
+Display 4–6 listings.
+
+## Waterfront Opportunities
+
+Display selected waterfront properties when available.
+
+## Recent Sales
+
+Display selected closed transactions.
+
+## Explore Communities
+
+Display community cards.
+
+This creates a natural path:
+
+HOME → PROPERTY → COMMUNITY → CONTACT
+
+---
+
+# 22. HOME SEARCH CTA
+
+Create a highly visible section:
+
+## Find Your Next Home
+
+Supporting copy:
+
+"Search homes throughout Annapolis and the surrounding Chesapeake Bay communities."
+
+CTA:
+
+"Search Homes"
+
+This should link directly to:
+
+`/properties`
+
+---
+
+# 23. HOME VALUATION
+
+Create:
+
+`/home-valuation`
+
+Headline:
+
+## What Is Your Maryland Home Worth?
+
+Supporting copy:
+
+"Your home's value is influenced by more than recent sales. Let's look at the market, your property, and the opportunities available to you."
+
+Form:
+
+Name
+
+Email
+
+Phone
+
+Property Address
+
+Timeline
+
+Message
+
+CTA:
+
+"Request My Home Valuation"
+
+---
+
+# 24. SELLER PORTFOLIO
+
+The properties page should help sellers understand that KM Curtis Realty has experience marketing properties.
+
+Include:
+
+## Recent Sales
+
+Use real transaction information.
+
+Potential future categories:
+
+* Waterfront
+* Luxury
+* Annapolis
+* Move-Up Homes
+* Relocation
+* First-Time Sellers
+
+Do not claim specialization in a category unless supported by actual business experience.
+
+---
+
+# 25. AMERICAN DREAM TV INTEGRATION
+
+This is a major differentiator for KM Curtis Realty.
+
+Create an American Dream TV section on the homepage.
+
+Headline:
+
+## Maryland Is More Than a Place to Live.
+
+### It's a Lifestyle.
+
+Introduce Krissy as a host of The American Dream TV.
+
+Show:
+
+* Video thumbnails
+* Episodes
+* Local businesses
+* Communities
+* Lifestyle
+* Real estate stories
+
+CTA:
+
+"Watch the Latest Episodes"
+
+---
+
+# 26. AMERICAN DREAM PROPERTY MARKETING
+
+Create a section explaining how video and storytelling can complement real estate marketing.
+
+Potential headline:
+
+## Your Home Has a Story. Let's Tell It.
+
+Content should explain that KM Curtis Realty combines traditional real estate marketing with modern digital storytelling.
+
+Do not promise television exposure for every listing.
+
+---
+
+# 27. LUXURY / EDITORIAL DESIGN
+
+Take inspiration from premium luxury real estate websites.
+
+Use:
+
+* Full-width imagery
+* Large typography
+* Editorial layouts
+* Generous whitespace
+* Minimal navigation
+* Subtle animations
+* Elegant property cards
+* High-quality photography
+* Strong visual hierarchy
+
+The site should feel expensive without being flashy.
+
+---
+
+# 28. HOMEPAGE FLOW
+
+The homepage should follow this approximate sequence:
+
+### 1. HERO
+
+"Real Estate. Maryland Living. Your Next Chapter."
+
+### 2. INTRODUCTION
+
+KM Curtis Realty / Krissy Curtis
+
+### 3. SEARCH HOMES
+
+Property search CTA
+
+### 4. FEATURED PROPERTIES
+
+Current listings
+
+### 5. EXPLORE COMMUNITIES
+
+Annapolis / Chesapeake Bay communities
+
+### 6. WHY KM CURTIS REALTY
+
+Local expertise
+
+### 7. SELL YOUR HOME
+
+Seller strategy
+
+### 8. AMERICAN DREAM TV
+
+Video / lifestyle
+
+### 9. RELOCATION
+
+Move to Maryland
+
+### 10. GUIDES
+
+Buyer / seller / relocation guides
+
+### 11. TESTIMONIALS
+
+Verified client reviews only
+
+### 12. FINAL CTA
+
+"Let's Find Your Place in Maryland."
+
+---
+
+# 29. PREMIUM PROPERTY PRESENTATION
+
+Property photography should be treated as one of the most important parts of the site.
+
+Images should:
+
+* Fill large areas
+* Maintain proper aspect ratios
+* Load efficiently
+* Use responsive image sizes
+* Support lazy loading
+* Avoid pixelation
+* Look excellent on retina displays
+
+Use modern image optimization.
+
+---
+
+# 30. LISTING DATA ARCHITECTURE
+
+Separate property data from UI components.
+
+Create a property model capable of supporting:
+
+* MLS ID
+* Status
+* Address
+* City
+* State
+* ZIP
+* Price
+* Beds
+* Baths
+* Square footage
+* Lot size
+* Year built
+* Property type
+* Description
+* Images
+* Features
+* Amenities
+* Waterfront
+* Garage
+* School information
+* Tax information
+* HOA
+* Latitude
+* Longitude
+* Listing agent
+* Listing brokerage
+* MLS disclaimer
+
+The data model should be compatible with a future IDX integration.
+
+---
+
+# 31. MLS / IDX
+
+Do not scrape another real estate website.
+
+Do not scrape MLS listings.
+
+Do not manually copy live listing data from third-party websites.
+
+Create an integration-ready architecture.
+
+The actual MLS / IDX provider will be selected separately.
+
+When an IDX provider is selected, build the integration according to that provider's API and licensing requirements.
+
+---
+
+# 32. DEMO DATA
+
+During development, use clearly labeled fictional demo properties.
+
+Example:
+
+`DEMO PROPERTY — NOT A REAL LISTING`
+
+Never accidentally publish fictional properties as real listings.
+
+When actual listing data becomes available, replace the demo dataset.
+
+---
+
+# 33. PROPERTY STATUS DESIGN
+
+Use visually distinct but tasteful status badges:
+
+FOR SALE
+
+COMING SOON
+
+PENDING
+
+ACTIVE UNDER CONTRACT
+
+SOLD
+
+Do not use overly bright colors.
+
+Keep the visual language consistent with the premium coastal design.
+
+---
+
+# 34. PROPERTY PAGE SEO
+
+Each property page should dynamically generate:
+
+* Title
+* Meta description
+* Canonical URL
+* Open Graph image
+* Property-specific structured data where appropriate
+* Breadcrumbs
+
+Example title:
+
+`123 Main Street, Annapolis MD | KM Curtis Realty`
+
+---
+
+# 35. COMMUNITY SEO
+
+Each community page should target local search intent.
+
+Examples:
+
+"Annapolis MD Real Estate"
+
+"Severna Park MD Real Estate"
+
+"Edgewater MD Real Estate"
+
+"Cape St. Claire MD Real Estate"
+
+"Waterfront Homes in Annapolis MD"
+
+Avoid keyword stuffing.
+
+---
+
+# 36. RELOCATION SEO
+
+Create strong landing pages around:
+
+* Moving to Annapolis
+* Relocating to Maryland
+* Annapolis relocation
+* Living in Annapolis
+* Best Annapolis neighborhoods
+* Annapolis waterfront communities
+* Living near Fort Meade
+* Living near BWI
+* Commuting to Washington DC from Annapolis
+
+These pages should be useful first and SEO-focused second.
+
+---
+
+# 37. MOBILE PROPERTY SEARCH
+
+Mobile property search is critical.
+
+On mobile:
+
+* Search bar should remain prominent
+* Filters should open in a drawer
+* Property cards should be easy to swipe
+* Images should remain large
+* CTAs should be thumb-friendly
+* Property details should be easy to scan
+
+Consider a sticky bottom CTA:
+
+"Let's Connect"
+
+---
+
+# 38. CONVERSION STRATEGY
+
+The property experience should lead naturally to a conversation.
+
+Example buyer journey:
+
+Google / YouTube
+
+↓
+
+Community Page
+
+↓
+
+Property Search
+
+↓
+
+Property Detail
+
+↓
+
+Interested in This Property?
+
+↓
+
+Contact Form
+
+↓
+
+CRM
+
+Another journey:
+
+YouTube
+
+↓
+
+Relocation Guide
+
+↓
+
+Relocation Page
+
+↓
+
+Community Search
+
+↓
+
+Property Search
+
+↓
+
+Lead
+
+---
+
+# 39. WEBSITE DIFFERENTIATOR
+
+The website should not simply say:
+
+"Here are homes for sale."
+
+It should communicate:
+
+## "I can help you understand where to live, what life is like there, and how to make the right real estate decision."
+
+That is the core positioning of KM Curtis Realty.
+
+---
+
+# 40. REFERENCE SITE FEATURES TO ADAPT
+
+The reference site demonstrates several useful concepts that should be incorporated into the KM Curtis Realty website:
+
+### Portfolio
+
+Use:
+
+* Featured Listings
+* Past Transactions
+
+### Home Search
+
+Create a prominent search experience.
+
+### Home Valuation
+
+Create a seller lead-generation path.
+
+### Locations
+
+Create community-specific real estate pages.
+
+### Guides
+
+Create buyer and seller resources.
+
+### Testimonials
+
+Display verified reviews.
+
+### Contact
+
+Keep contact accessible throughout the site.
+
+### Property Pages
+
+Create detailed individual property experiences.
+
+These concepts are visible throughout the reference site's navigation and portfolio structure.
+
+---
+
+# 41. DO NOT OVERCOPY THE REFERENCE
+
+The finished KM Curtis Realty website should be clearly distinguishable.
+
+Use a different:
+
+* Color system
+* Typography combination
+* Layout rhythm
+* Content
+* Brand voice
+* Photography
+* Navigation styling
+* Card design
+* CTA styling
+* Homepage composition
+
+The inspiration is the **level of quality and functionality**, not duplication.
+
+---
+
+# 42. FINAL CREATIVE DIRECTION
+
+Think:
+
+### "Luxury Presence meets Chesapeake Bay lifestyle meets modern relocation resource."
+
+The website should feel like a high-end real estate brand that happens to be exceptionally knowledgeable about Annapolis and Maryland.
+
+The user should be able to:
+
+**Explore → Search → Discover → Learn → Connect**
+
+with as little friction as possible.
+
+---
+
+# 43. CLAUDE CODE INSTRUCTION
+
+When implementing this project:
+
+First inspect the repository and determine what already exists.
+
+Then create an implementation plan.
+
+Before building the property system, establish:
+
+1. Property data model
+2. Property card component
+3. Property grid
+4. Search/filter component
+5. Property detail template
+6. Community data model
+7. Community page template
+8. Lead form architecture
+
+Build these as reusable components rather than one-off pages.
+
+The property system should be designed so that an IDX/MLS integration can replace the demo data later without requiring a complete rewrite of the frontend.
+
+Do not begin by creating dozens of static property pages.
+
+Build the underlying system first.
+
+---
+
+# 44. FINAL SUCCESS CRITERIA
+
+The finished website should feel like a **premium Annapolis real estate destination**, not simply an agent brochure.
+
+It should successfully combine:
+
+* Property search
+* Featured listings
+* Past sales
+* Community discovery
+* Relocation information
+* Seller lead generation
+* Buyer lead generation
+* Home valuation
+* Lifestyle content
+* American Dream TV
+* YouTube
+* SEO
+* Local expertise
+* Chesapeake Bay identity
+
+The ultimate goal:
+
+## Turn website visitors into conversations.
+
+Every design and technical decision should support that goal.
