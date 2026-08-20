@@ -6,8 +6,8 @@ export function Hero() {
   return (
     <section className="relative flex h-[88vh] min-h-[560px] items-end overflow-hidden bg-ink">
       <Image
-        src="/images/properties/waterfront-manor-exterior.svg"
-        alt="Waterfront home along the Chesapeake Bay at dusk"
+        src="/images/brand/hero-chesapeake-sunset.jpg"
+        alt="Sunset over the Chesapeake Bay"
         fill
         priority
         sizes="100vw"
