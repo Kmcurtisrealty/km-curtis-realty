@@ -22,7 +22,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-shell/50">Explore</p>
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-shell/50">Explore</p>
             <ul className="space-y-2 text-sm">
               {NAV_ITEMS.slice(0, 6).map((item) => (
                 <li key={item.href}>
@@ -35,7 +35,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-shell/50">More</p>
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-shell/50">More</p>
             <ul className="space-y-2 text-sm">
               {NAV_ITEMS.slice(6).map((item) => (
                 <li key={item.href}>
@@ -48,7 +48,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-shell/50">Contact</p>
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-shell/50">Contact</p>
             <ul className="space-y-2 text-sm text-shell/80">
               <li>
                 <a href="mailto:kmcurtisrealty@gmail.com" className="hover:text-shell">

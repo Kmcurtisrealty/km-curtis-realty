@@ -15,7 +15,7 @@ export function AmericanDreamTVSection() {
       <Container>
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
           <div>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-shell/70">American Dream TV</p>
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">American Dream TV</p>
             <h2 className="text-display-md font-display">
               Maryland Is More Than a Place to Live. <span className="block">It&rsquo;s a Lifestyle.</span>
             </h2>
@@ -32,7 +32,7 @@ export function AmericanDreamTVSection() {
           </div>
           <div className="grid grid-cols-3 gap-3">
             {thumbnails.map((thumb) => (
-              <div key={thumb.src} className="relative aspect-[3/4] overflow-hidden">
+              <div key={thumb.src} className="relative aspect-[3/4] overflow-hidden rounded-2xl">
                 <Image src={thumb.src} alt={thumb.alt} fill sizes="20vw" className="object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center bg-ink/30">
                   <Play className="h-8 w-8 text-shell" aria-hidden="true" />

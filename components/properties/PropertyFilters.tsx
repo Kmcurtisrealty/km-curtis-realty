@@ -28,7 +28,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
         if (def.kind === "text") {
           return (
             <div key={def.key}>
-              <label htmlFor="filter-location" className="mb-2 block text-xs font-semibold uppercase tracking-[0.12em] text-marsh">
+              <label htmlFor="filter-location" className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-marsh">
                 {def.label}
               </label>
               <input
@@ -37,7 +37,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
                 value={filters.location}
                 onChange={(e) => onChange({ location: e.target.value })}
                 placeholder={def.placeholder}
-                className="w-full border border-mist bg-shell px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:border-bay-teal focus:outline-none"
+                className="w-full rounded-control border border-mist bg-shell px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:border-bay-teal focus:outline-none"
               />
             </div>
           );
@@ -48,7 +48,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
           const selected = filters[key] as string[];
           return (
             <div key={def.key}>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-marsh">{def.label}</p>
+              <p className="mb-2 text-xs font-medium uppercase tracking-[0.12em] text-marsh">{def.label}</p>
               <div className="flex flex-wrap gap-2">
                 {def.options.map((opt) => {
                   const active = selected.includes(opt.value);
@@ -63,7 +63,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
                       }
                       aria-pressed={active}
                       className={cn(
-                        "border px-3 py-2 text-xs font-medium transition-colors",
+                        "rounded-full border px-3 py-2 text-xs font-medium transition-colors",
                         active
                           ? "border-bay-teal bg-bay-teal text-shell"
                           : "border-mist text-ink/70 hover:border-bay-teal/50",
@@ -81,7 +81,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
         if (def.kind === "priceRange") {
           return (
             <div key={def.key}>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-marsh">{def.label}</p>
+              <p className="mb-2 text-xs font-medium uppercase tracking-[0.12em] text-marsh">{def.label}</p>
               <div className="flex items-center gap-3">
                 <input
                   type="number"
@@ -90,7 +90,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
                   placeholder="Min"
                   value={filters.minPrice ?? ""}
                   onChange={(e) => onChange({ minPrice: e.target.value ? Number(e.target.value) : undefined })}
-                  className="w-full border border-mist bg-shell px-3 py-2.5 text-sm focus:border-bay-teal focus:outline-none"
+                  className="w-full rounded-control border border-mist bg-shell px-3 py-2.5 text-sm focus:border-bay-teal focus:outline-none"
                 />
                 <span className="text-ink/40">–</span>
                 <input
@@ -100,7 +100,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
                   placeholder="Max"
                   value={filters.maxPrice ?? ""}
                   onChange={(e) => onChange({ maxPrice: e.target.value ? Number(e.target.value) : undefined })}
-                  className="w-full border border-mist bg-shell px-3 py-2.5 text-sm focus:border-bay-teal focus:outline-none"
+                  className="w-full rounded-control border border-mist bg-shell px-3 py-2.5 text-sm focus:border-bay-teal focus:outline-none"
                 />
               </div>
             </div>
@@ -110,7 +110,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
         if (def.kind === "numberRange") {
           return (
             <div key={def.key}>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-marsh">{def.label}</p>
+              <p className="mb-2 text-xs font-medium uppercase tracking-[0.12em] text-marsh">{def.label}</p>
               <div className="flex items-center gap-3">
                 <input
                   type="number"
@@ -119,7 +119,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
                   placeholder="Min"
                   value={filters.minSqft ?? ""}
                   onChange={(e) => onChange({ minSqft: e.target.value ? Number(e.target.value) : undefined })}
-                  className="w-full border border-mist bg-shell px-3 py-2.5 text-sm focus:border-bay-teal focus:outline-none"
+                  className="w-full rounded-control border border-mist bg-shell px-3 py-2.5 text-sm focus:border-bay-teal focus:outline-none"
                 />
                 <span className="text-ink/40">–</span>
                 <input
@@ -129,7 +129,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
                   placeholder="Max"
                   value={filters.maxSqft ?? ""}
                   onChange={(e) => onChange({ maxSqft: e.target.value ? Number(e.target.value) : undefined })}
-                  className="w-full border border-mist bg-shell px-3 py-2.5 text-sm focus:border-bay-teal focus:outline-none"
+                  className="w-full rounded-control border border-mist bg-shell px-3 py-2.5 text-sm focus:border-bay-teal focus:outline-none"
                 />
               </div>
             </div>
@@ -141,7 +141,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
           const current = filters[key];
           return (
             <div key={def.key}>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-marsh">{def.label}</p>
+              <p className="mb-2 text-xs font-medium uppercase tracking-[0.12em] text-marsh">{def.label}</p>
               <div className="flex flex-wrap gap-2">
                 {def.options.map((opt) => {
                   const value = Number(opt.value);
@@ -153,7 +153,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
                       onClick={() => onChange({ [key]: active ? undefined : value } as Partial<PropertyFilterState>)}
                       aria-pressed={active}
                       className={cn(
-                        "h-10 w-14 border text-xs font-medium transition-colors",
+                        "h-10 w-14 rounded-full border text-xs font-medium transition-colors",
                         active
                           ? "border-bay-teal bg-bay-teal text-shell"
                           : "border-mist text-ink/70 hover:border-bay-teal/50",
@@ -183,7 +183,7 @@ export function PropertyFilters({ filters, onChange, onClear, resultCount, class
           type="button"
           onClick={onClear}
           disabled={isFilterStateEmpty(filters)}
-          className="text-xs font-semibold uppercase tracking-[0.1em] text-bay-teal underline underline-offset-4 disabled:pointer-events-none disabled:text-ink/30 disabled:no-underline"
+          className="text-xs font-medium uppercase tracking-[0.1em] text-bay-teal underline underline-offset-4 disabled:pointer-events-none disabled:text-ink/30 disabled:no-underline"
         >
           Clear all
         </button>

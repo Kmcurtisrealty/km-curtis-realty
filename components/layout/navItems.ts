@@ -9,7 +9,6 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Buy", href: "/buy" },
   { label: "Sell", href: "/sell" },
-  { label: "Relocate", href: "/relocate" },
   { label: "Properties", href: "/properties" },
   {
     label: "Communities",
@@ -19,9 +18,8 @@ export const NAV_ITEMS: NavItem[] = [
       { label: "Severna Park", href: "/communities/severna-park" },
     ],
   },
-  { label: "Lifestyle", href: "/lifestyle" },
   { label: "American Dream TV", href: "/american-dream-tv" },
   { label: "About", href: "/about" },
   { label: "Resources", href: "/resources" },
-  { label: "Contact", href: "/contact" },
+  { label: "Let's Connect", href: "/contact" },
 ];

@@ -107,7 +107,7 @@ export function PropertyInquiryForm({
       />
       <CheckboxField id="pi-interested" label="I'm interested in this property." registration={register("interestedInProperty")} />
 
-      {submitError ? <p className="text-sm text-clay">{submitError}</p> : null}
+      {submitError ? <p className="text-sm text-error">{submitError}</p> : null}
 
       <Button type="submit" variant="clay" size="lg" disabled={isSubmitting} className="w-full">
         {isSubmitting ? "Sending..." : "Send Inquiry"}

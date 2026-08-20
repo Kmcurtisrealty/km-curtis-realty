@@ -12,7 +12,7 @@ const styles: Record<PropertyStatus, string> = {
   "for-sale": "bg-bay-teal text-shell",
   "coming-soon": "border border-marsh text-marsh bg-transparent",
   pending: "bg-mist text-ink",
-  "active-under-contract": "bg-dusty-blue text-shell",
+  "active-under-contract": "bg-clay text-ink",
   sold: "bg-ink text-shell",
 };
 
@@ -20,7 +20,7 @@ export function StatusBadge({ status, className }: StatusBadgeProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em]",
+        "inline-flex items-center gap-1 rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.12em]",
         styles[status],
         className,
       )}

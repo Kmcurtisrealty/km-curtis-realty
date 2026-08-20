@@ -13,8 +13,8 @@ export default function ContactPage() {
     <div className="py-20">
       <Container className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_1.2fr]">
         <div>
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-marsh">Get in Touch</p>
-          <h1 className="text-display-lg font-display text-ink">Let&rsquo;s Find Your Place in Maryland</h1>
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">Get in Touch</p>
+          <h1 className="text-display-lg font-display text-ink">Let&rsquo;s Connect</h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-ink/70">
             Whether you&rsquo;re buying, selling, or just starting to explore Annapolis and the
             Chesapeake Bay, tell us a bit about what you&rsquo;re looking for and we&rsquo;ll be
@@ -37,7 +37,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="border border-mist p-8 md:p-10">
+        <div className="rounded-card border border-mist bg-shell p-8 shadow-soft md:p-10">
           <ContactForm />
         </div>
       </Container>

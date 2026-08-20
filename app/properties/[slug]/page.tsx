@@ -114,7 +114,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
             <div className="flex flex-wrap items-center gap-3">
               <StatusBadge status={property.status} />
               {property.tags.includes("waterfront") ? (
-                <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-bay-teal">Waterfront</span>
+                <span className="text-[11px] font-medium uppercase tracking-[0.12em] text-bay-teal">Waterfront</span>
               ) : null}
             </div>
             <h1 className="mt-4 font-display text-3xl text-ink md:text-4xl">{formatPrice(displayPrice)}</h1>
@@ -153,7 +153,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
           </div>
 
           <aside>
-            <div className="sticky top-28 border border-mist p-6">
+            <div className="sticky top-28 rounded-card border border-mist bg-shell p-6 shadow-soft">
               <h2 className="font-display text-xl text-ink">Interested in This Property?</h2>
               <p className="mt-2 text-sm leading-relaxed text-ink/65">
                 Let&rsquo;s schedule a private showing or talk through whether this home is the

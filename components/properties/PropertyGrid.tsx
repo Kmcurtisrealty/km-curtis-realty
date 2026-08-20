@@ -15,7 +15,7 @@ export function PropertyGrid({
 }: PropertyGridProps) {
   if (properties.length === 0) {
     return (
-      <div className="border border-dashed border-mist bg-shell/60 px-6 py-16 text-center">
+      <div className="rounded-card border border-dashed border-mist bg-bg-alt/60 px-6 py-16 text-center">
         <p className="mx-auto max-w-md text-sm leading-relaxed text-ink/60">{emptyMessage}</p>
       </div>
     );

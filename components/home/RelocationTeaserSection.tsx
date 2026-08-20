@@ -28,8 +28,8 @@ export function RelocationTeaserSection() {
             ))}
           </ul>
           <div>
-            <Button href="/relocate" variant="primary" size="lg">
-              Explore Relocation Resources
+            <Button href="/contact" variant="primary" size="lg">
+              Let&rsquo;s Connect
             </Button>
           </div>
         </div>

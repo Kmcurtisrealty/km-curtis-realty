@@ -22,11 +22,11 @@ export function PropertyStats({ property }: PropertyStatsProps) {
   if (stats.length === 0) return null;
 
   return (
-    <div className="grid grid-cols-2 gap-6 border-y border-mist py-8 sm:grid-cols-3 md:grid-cols-5">
+    <div className="grid grid-cols-2 gap-6 rounded-card border border-mist bg-bg-alt/60 px-6 py-8 sm:grid-cols-3 md:grid-cols-5">
       {stats.map((stat) => (
         <div key={stat.label}>
           <p className="font-display text-3xl text-ink">{stat.value}</p>
-          <p className="mt-1 text-xs font-semibold uppercase tracking-[0.1em] text-marsh">{stat.label}</p>
+          <p className="mt-1 text-xs font-medium uppercase tracking-[0.1em] text-marsh">{stat.label}</p>
         </div>
       ))}
     </div>

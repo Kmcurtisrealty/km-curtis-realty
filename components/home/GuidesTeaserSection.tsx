@@ -16,7 +16,7 @@ export function GuidesTeaserSection() {
         <SectionHeading eyebrow="Resources" title="Guides for Every Step" align="center" className="mx-auto" />
         <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {guides.map((guide) => (
-            <div key={guide.title} className="border border-mist p-8 text-center">
+            <div key={guide.title} className="rounded-card border border-mist bg-shell p-8 text-center shadow-soft">
               <guide.icon className="mx-auto h-7 w-7 text-bay-teal" aria-hidden="true" />
               <h3 className="mt-4 font-display text-lg text-ink">{guide.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink/70">{guide.body}</p>

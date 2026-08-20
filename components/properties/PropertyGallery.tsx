@@ -35,7 +35,7 @@ export function PropertyGallery({ images, address }: PropertyGalleryProps) {
         <button
           type="button"
           onClick={() => setIndex(0)}
-          className="group relative col-span-1 row-span-2 aspect-[4/3] overflow-hidden bg-mist md:col-span-2 md:aspect-auto"
+          className="group relative col-span-1 row-span-2 aspect-[4/3] overflow-hidden rounded-card bg-mist md:col-span-2 md:aspect-auto"
           aria-label={`Open gallery for ${address}`}
         >
           <Image
@@ -53,7 +53,7 @@ export function PropertyGallery({ images, address }: PropertyGalleryProps) {
             key={image.src + i}
             type="button"
             onClick={() => setIndex(i + 1)}
-            className="group relative hidden aspect-[4/3] overflow-hidden bg-mist md:block"
+            className="group relative hidden aspect-[4/3] overflow-hidden rounded-card bg-mist md:block"
             aria-label={`Open gallery for ${address}, image ${i + 2}`}
           >
             <Image
@@ -75,7 +75,7 @@ export function PropertyGallery({ images, address }: PropertyGalleryProps) {
       <button
         type="button"
         onClick={() => setIndex(0)}
-        className="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.1em] text-bay-teal md:hidden"
+        className="mt-3 inline-flex items-center gap-2 rounded-full text-xs font-medium uppercase tracking-[0.1em] text-bay-teal md:hidden"
       >
         <Expand className="h-3.5 w-3.5" aria-hidden="true" />
         View all {images.length} photos

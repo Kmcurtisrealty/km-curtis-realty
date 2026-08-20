@@ -34,7 +34,7 @@ export function CommunityOverview({ community, properties }: CommunityOverviewPr
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/20 to-transparent" />
         <Container className="relative pb-14 text-shell">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-shell/70">Community Guide</p>
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-shell/70">Community Guide</p>
           <h1 className="mt-3 text-display-lg font-display">{community.name}, Maryland</h1>
           <p className="mt-4 max-w-xl text-base text-shell/85">{community.tagline}</p>
         </Container>
@@ -61,24 +61,24 @@ export function CommunityOverview({ community, properties }: CommunityOverviewPr
         </div>
 
         <aside className="space-y-10">
-          <div className="border border-mist p-6">
-            <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-marsh">Schools</h3>
+          <div className="rounded-card border border-mist bg-shell p-6 shadow-soft">
+            <h3 className="mb-3 text-xs font-medium uppercase tracking-[0.12em] text-marsh">Schools</h3>
             <p className="text-sm leading-relaxed text-ink/75">{community.schools}</p>
           </div>
-          <div className="border border-mist p-6">
-            <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-marsh">Commute</h3>
+          <div className="rounded-card border border-mist bg-shell p-6 shadow-soft">
+            <h3 className="mb-3 text-xs font-medium uppercase tracking-[0.12em] text-marsh">Commute</h3>
             <p className="text-sm leading-relaxed text-ink/75">{community.commute}</p>
           </div>
-          <div className="border border-mist p-6">
-            <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-marsh">Neighborhoods</h3>
+          <div className="rounded-card border border-mist bg-shell p-6 shadow-soft">
+            <h3 className="mb-3 text-xs font-medium uppercase tracking-[0.12em] text-marsh">Neighborhoods</h3>
             <ul className="space-y-1.5 text-sm text-ink/75">
               {community.neighborhoods.map((n) => (
                 <li key={n}>{n}</li>
               ))}
             </ul>
           </div>
-          <div className="border border-mist p-6">
-            <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-marsh">Local Attractions</h3>
+          <div className="rounded-card border border-mist bg-shell p-6 shadow-soft">
+            <h3 className="mb-3 text-xs font-medium uppercase tracking-[0.12em] text-marsh">Local Attractions</h3>
             <ul className="space-y-1.5 text-sm text-ink/75">
               {community.localAttractions.map((a) => (
                 <li key={a}>{a}</li>

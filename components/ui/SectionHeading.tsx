@@ -13,7 +13,7 @@ export function SectionHeading({ eyebrow, title, supporting, align = "left", cla
   return (
     <div className={cn("max-w-2xl", align === "center" && "mx-auto text-center", className)}>
       {eyebrow ? (
-        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-marsh">{eyebrow}</p>
+        <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-marsh">{eyebrow}</p>
       ) : null}
       <h2 className="text-display-md font-display text-ink">{title}</h2>
       {supporting ? <p className="mt-4 text-base leading-relaxed text-ink/70">{supporting}</p> : null}

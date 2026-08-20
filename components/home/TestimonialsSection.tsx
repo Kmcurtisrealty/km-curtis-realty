@@ -16,7 +16,7 @@ export function TestimonialsSection() {
         />
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
           {testimonials.map((testimonial) => (
-            <figure key={testimonial.id} className="border border-shell/15 p-8">
+            <figure key={testimonial.id} className="rounded-card border border-shell/15 p-8">
               <blockquote className="font-display text-lg leading-snug text-shell/95">
                 &ldquo;{testimonial.quote}&rdquo;
               </blockquote>

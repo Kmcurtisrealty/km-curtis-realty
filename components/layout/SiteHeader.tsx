@@ -34,7 +34,7 @@ export function SiteHeader() {
             >
               <Link
                 href={item.href}
-                className="text-xs font-semibold uppercase tracking-[0.1em] text-ink/80 transition-colors hover:text-bay-teal"
+                className="text-xs font-medium uppercase tracking-[0.1em] text-ink/80 transition-colors hover:text-bay-teal"
               >
                 {item.label}
               </Link>
@@ -45,7 +45,7 @@ export function SiteHeader() {
                     openDropdown === item.label ? "opacity-100" : "pointer-events-none opacity-0",
                   )}
                 >
-                  <div className="border border-mist bg-shell shadow-lg">
+                  <div className="rounded-2xl border border-mist bg-shell shadow-soft-lg overflow-hidden">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
@@ -70,7 +70,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="p-2 text-ink lg:hidden"
+          className="rounded-full p-2 text-ink hover:bg-mist/40 lg:hidden"
           aria-label="Open menu"
           onClick={() => setMobileOpen(true)}
         >

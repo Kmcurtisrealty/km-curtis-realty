@@ -11,7 +11,7 @@ export function MobileStickyCTA() {
       <a
         href="tel:+14105550148"
         aria-label="Call KM Curtis Realty"
-        className="flex items-center justify-center border border-ink/20 px-4 text-ink"
+        className="flex items-center justify-center rounded-full border border-ink/20 px-4 text-ink"
       >
         <Phone className="h-5 w-5" />
       </a>

@@ -16,8 +16,8 @@ export function PropertyMap({ property }: PropertyMapProps) {
   if (property.lat === undefined || property.lng === undefined) return null;
 
   return (
-    <div className="border border-mist bg-mist/30">
-      <div className="flex aspect-[16/9] flex-col items-center justify-center gap-3 bg-[radial-gradient(circle_at_center,_rgba(46,74,76,0.12),_transparent_65%)] text-center">
+    <div className="overflow-hidden rounded-card border border-mist bg-bg-alt">
+      <div className="flex aspect-[16/9] flex-col items-center justify-center gap-3 bg-[radial-gradient(circle_at_center,_rgba(108,144,176,0.16),_transparent_65%)] text-center">
         <MapPin className="h-8 w-8 text-bay-teal" aria-hidden="true" />
         <div>
           <p className="font-display text-lg text-ink">

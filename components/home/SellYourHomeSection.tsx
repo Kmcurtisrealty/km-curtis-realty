@@ -7,7 +7,7 @@ export function SellYourHomeSection() {
     <section className="py-24">
       <Container className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <div>
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-marsh">For Sellers</p>
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">For Sellers</p>
           <h2 className="text-display-md font-display text-ink">Sell Your Home With a Strategy, Not a Sign in the Yard</h2>
           <p className="mt-6 text-base leading-relaxed text-ink/75">
             Every listing gets a marketing plan built around professional photography, targeted
@@ -24,7 +24,7 @@ export function SellYourHomeSection() {
             </Button>
           </div>
         </div>
-        <div className="relative aspect-[4/5] overflow-hidden">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-card shadow-soft">
           <Image
             src="/images/properties/backyard-pool-terrace.svg"
             alt="Professionally staged home exterior and terrace"

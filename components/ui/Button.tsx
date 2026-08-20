@@ -25,12 +25,12 @@ interface ButtonAsButton extends SharedProps, Omit<ButtonHTMLAttributes<HTMLButt
 type ButtonProps = ButtonAsLink | ButtonAsButton;
 
 const base =
-  "inline-flex items-center justify-center gap-2 font-medium tracking-wide uppercase text-xs transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bay-teal disabled:opacity-50 disabled:pointer-events-none";
+  "inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-wide uppercase text-xs transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bay-teal disabled:opacity-50 disabled:pointer-events-none";
 
 const variants: Record<ButtonVariant, string> = {
-  primary: "bg-bay-teal text-shell hover:bg-bay-teal-dark",
-  secondary: "border border-ink/30 text-ink hover:border-ink hover:bg-ink/5",
-  clay: "bg-clay text-shell hover:brightness-95",
+  primary: "bg-bay-teal text-shell shadow-soft hover:bg-bay-teal-dark hover:shadow-soft-lg",
+  secondary: "border border-ink/25 text-ink hover:border-ink/50 hover:bg-ink/5",
+  clay: "bg-clay text-ink shadow-soft hover:brightness-95 hover:shadow-soft-lg",
   ghost: "text-ink hover:text-bay-teal underline underline-offset-4",
 };
 

@@ -15,7 +15,7 @@ export function CheckboxField({ label, id, registration, ...rest }: CheckboxFiel
         type="checkbox"
         {...registration}
         {...rest}
-        className="h-4 w-4 shrink-0 border border-mist accent-bay-teal"
+        className="h-4 w-4 shrink-0 rounded border border-mist accent-bay-teal"
       />
       {label}
     </label>

@@ -69,7 +69,7 @@ export function ContactForm() {
         placeholder="Tell us a bit about what you're looking for..."
       />
 
-      {submitError ? <p className="text-sm text-clay">{submitError}</p> : null}
+      {submitError ? <p className="text-sm text-error">{submitError}</p> : null}
 
       <Button type="submit" variant="primary" size="lg" disabled={isSubmitting} className="w-full sm:w-auto">
         {isSubmitting ? "Sending..." : "Send Message"}

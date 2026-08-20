@@ -27,7 +27,7 @@ export function PropertyFilterDrawer({ filters, onChange, onClear, resultCount }
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-flex items-center gap-2 border border-ink/20 px-4 py-3 text-xs font-semibold uppercase tracking-[0.1em] text-ink"
+        className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-4 py-3 text-xs font-medium uppercase tracking-[0.1em] text-ink"
       >
         <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
         Filters
@@ -48,7 +48,7 @@ export function PropertyFilterDrawer({ filters, onChange, onClear, resultCount }
         aria-modal="true"
         aria-label="Filter properties"
         className={cn(
-          "fixed inset-x-0 bottom-0 z-50 max-h-[85vh] overflow-y-auto rounded-t-2xl bg-shell px-6 pb-6 pt-5 shadow-2xl transition-transform duration-300 ease-in-out",
+          "fixed inset-x-0 bottom-0 z-50 max-h-[85vh] overflow-y-auto rounded-t-[28px] bg-shell px-6 pb-6 pt-5 shadow-soft-lg transition-transform duration-300 ease-in-out",
           open ? "translate-y-0" : "translate-y-full",
         )}
       >
@@ -64,7 +64,7 @@ export function PropertyFilterDrawer({ filters, onChange, onClear, resultCount }
         <button
           type="button"
           onClick={() => setOpen(false)}
-          className="mt-6 w-full bg-bay-teal px-6 py-4 text-xs font-semibold uppercase tracking-[0.12em] text-shell"
+          className="mt-6 w-full rounded-full bg-bay-teal px-6 py-4 text-xs font-medium uppercase tracking-[0.12em] text-shell shadow-soft"
         >
           Show {resultCount} {resultCount === 1 ? "Home" : "Homes"}
         </button>

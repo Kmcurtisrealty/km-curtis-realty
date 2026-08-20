@@ -12,7 +12,7 @@ interface TextAreaFieldProps extends Omit<TextareaHTMLAttributes<HTMLTextAreaEle
 export function TextAreaField({ label, id, registration, error, className, rows = 5, ...rest }: TextAreaFieldProps) {
   return (
     <div>
-      <label htmlFor={id} className="mb-2 block text-xs font-semibold uppercase tracking-[0.1em] text-marsh">
+      <label htmlFor={id} className="mb-2 block text-xs font-medium uppercase tracking-[0.1em] text-marsh">
         {label}
       </label>
       <textarea
@@ -23,13 +23,13 @@ export function TextAreaField({ label, id, registration, error, className, rows 
         aria-invalid={Boolean(error)}
         aria-describedby={error ? `${id}-error` : undefined}
         className={cn(
-          "w-full resize-y border bg-shell px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:outline-none",
-          error ? "border-clay" : "border-mist focus:border-bay-teal",
+          "w-full resize-y rounded-control border bg-shell px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:outline-none",
+          error ? "border-error" : "border-mist focus:border-bay-teal",
           className,
         )}
       />
       {error ? (
-        <p id={`${id}-error`} className="mt-1.5 text-xs text-clay">
+        <p id={`${id}-error`} className="mt-1.5 text-xs text-error">
           {error.message}
         </p>
       ) : null}

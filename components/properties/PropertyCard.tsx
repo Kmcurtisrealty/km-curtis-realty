@@ -18,7 +18,7 @@ export function PropertyCard({ property, priority = false }: PropertyCardProps) 
 
   return (
     <Link href={`/properties/${property.slug}`} className="group block">
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-mist">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-card bg-mist shadow-soft transition-shadow duration-300 group-hover:shadow-soft-lg">
         {primaryImage ? (
           <Image
             src={primaryImage.src}
@@ -32,7 +32,7 @@ export function PropertyCard({ property, priority = false }: PropertyCardProps) 
         <div className="absolute left-3 top-3 flex flex-wrap gap-2">
           <StatusBadge status={property.status} />
           {property.isDemo ? (
-            <span className="inline-flex items-center bg-shell/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink/60 border border-ink/10">
+            <span className="inline-flex items-center rounded-full bg-shell/90 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-ink/60 border border-ink/10">
               Demo Listing
             </span>
           ) : null}
@@ -42,7 +42,7 @@ export function PropertyCard({ property, priority = false }: PropertyCardProps) 
       <div className="pt-4">
         <div className="flex items-baseline justify-between gap-3">
           <p className="font-display text-xl text-ink">{formatPrice(displayPrice)}</p>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-marsh">
+          <p className="text-[11px] font-medium uppercase tracking-[0.1em] text-marsh">
             {PROPERTY_TYPE_LABELS[property.propertyType]}
           </p>
         </div>
@@ -73,7 +73,7 @@ export function PropertyCard({ property, priority = false }: PropertyCardProps) 
           </div>
         ) : null}
 
-        <span className="mt-4 inline-block text-xs font-semibold uppercase tracking-[0.12em] text-bay-teal underline underline-offset-4 decoration-bay-teal/40 group-hover:decoration-bay-teal">
+        <span className="mt-4 inline-block text-xs font-medium uppercase tracking-[0.12em] text-bay-teal underline underline-offset-4 decoration-bay-teal/40 group-hover:decoration-bay-teal">
           View Property
         </span>
       </div>

@@ -6,7 +6,7 @@ export function IntroSection() {
   return (
     <section className="py-24">
       <Container className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
-        <div className="relative order-2 aspect-[4/5] overflow-hidden md:order-1">
+        <div className="relative order-2 aspect-[4/5] overflow-hidden rounded-card shadow-soft md:order-1">
           <Image
             src="/images/brand/headshot-placeholder.svg"
             alt="Placeholder portrait of Krissy Curtis, to be replaced with a real photo"
@@ -16,7 +16,7 @@ export function IntroSection() {
           />
         </div>
         <div className="order-1 md:order-2">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-marsh">Meet Your Agent</p>
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">Meet Your Agent</p>
           <h2 className="text-display-md font-display text-ink">
             KM Curtis Realty is Krissy Curtis &mdash; local, hands-on, and genuinely invested in
             where you land.

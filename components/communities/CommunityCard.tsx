@@ -9,7 +9,7 @@ interface CommunityCardProps {
 export function CommunityCard({ community }: CommunityCardProps) {
   return (
     <Link href={`/communities/${community.slug}`} className="group block">
-      <div className="relative aspect-[4/5] w-full overflow-hidden bg-mist">
+      <div className="relative aspect-[4/5] w-full overflow-hidden rounded-card bg-mist shadow-soft transition-shadow duration-300 group-hover:shadow-soft-lg">
         <Image
           src={community.heroImage.src}
           alt={community.heroImage.alt}

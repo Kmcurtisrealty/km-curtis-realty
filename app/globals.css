@@ -1,15 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  /* Color palette — deliberately not the generic navy+gold real-estate look. */
-  --color-ink: #1e2622;
-  --color-shell: #f6f2ea;
-  --color-bay-teal: #2e4a4c;
-  --color-bay-teal-dark: #223638;
-  --color-marsh: #7c8b6f;
-  --color-clay: #b5654a;
-  --color-mist: #dde3de;
-  --color-dusty-blue: #6a7f8c;
+  /* Color palette — soft blues, greys, and whites. Airier and calmer than the
+     original dark-teal/terracotta editorial system; token names are kept
+     stable so every component that references them (rather than hardcoded
+     hex) picks up the new look automatically. */
+  --color-ink: #333a42; /* soft charcoal-grey text, not pure black */
+  --color-shell: #fafbfc; /* soft off-white background */
+  --color-bay-teal: #6c90b0; /* dusty muted blue — primary accent/CTA */
+  --color-bay-teal-dark: #5a7c9a; /* deeper hover state for the primary accent */
+  --color-marsh: #6b7480; /* mid grey — muted/secondary text */
+  --color-clay: #a9c4d8; /* lighter powder blue — rare high-priority CTA pop */
+  --color-mist: #dee3e8; /* light grey — borders/dividers */
+  --color-dusty-blue: #a9c4d8; /* hover/secondary accent, powder blue */
+  --color-bg-alt: #eef1f4; /* pale grey — section/card backgrounds */
+  --color-error: #b3564b; /* muted rust — reserved for form validation only, kept out of the CTA palette so it still reads as "attention" */
+
+  /* Softened corner radii + shadows for the "less industrial" pass. */
+  --radius-card: 1.25rem;
+  --radius-control: 0.75rem;
+  --shadow-soft: 0 8px 24px -12px rgb(51 58 66 / 0.14), 0 2px 8px -2px rgb(51 58 66 / 0.08);
+  --shadow-soft-lg: 0 20px 48px -20px rgb(51 58 66 / 0.18), 0 4px 12px -4px rgb(51 58 66 / 0.08);
 
   /* Typography */
   --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;

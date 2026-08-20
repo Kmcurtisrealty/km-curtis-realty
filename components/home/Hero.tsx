@@ -15,7 +15,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
       <Container className="relative pb-20 text-shell">
-        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-shell/70">
+        <p className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-shell/70">
           KM Curtis Realty &middot; Annapolis &amp; the Chesapeake Bay
         </p>
         <h1 className="max-w-3xl text-display-xl font-display leading-[1.05]">
