@@ -1,5 +1,5 @@
 import { createElement } from "react";
-import { LEAD_NOTIFICATION_EMAIL, RESEND_FROM_EMAIL, resend } from "@/lib/email/resend";
+import { LEAD_NOTIFICATION_EMAIL, RESEND_FROM_EMAIL, getResend } from "@/lib/email/resend";
 import { ContactEmail } from "@/lib/email/templates/ContactEmail";
 import { PropertyInquiryEmail } from "@/lib/email/templates/PropertyInquiryEmail";
 import type { LeadSubmission } from "@/lib/types/lead";
@@ -20,6 +20,7 @@ export interface SubmitLeadResult {
  */
 export async function submitLead(submission: LeadSubmission): Promise<SubmitLeadResult> {
   try {
+    const resend = getResend();
     if (submission.kind === "contact") {
       await resend.emails.send({
         from: RESEND_FROM_EMAIL,

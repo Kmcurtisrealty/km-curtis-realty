@@ -1,6 +1,6 @@
 import type { Property } from "@/lib/types/property";
 import { Accordion, type AccordionItemData } from "@/components/ui/Accordion";
-import { formatPrice, formatNumber } from "@/lib/utils/formatPrice";
+import { formatPrice } from "@/lib/utils/formatPrice";
 
 interface PropertyDetailAccordionProps {
   property: Property;
