@@ -22,10 +22,10 @@ const DEMO_AGENT = {
   licenseNumber: "MD-DEMO-00000",
 };
 
-const DEMO_BROKERAGE = "KM Curtis Realty";
+const DEMO_BROKERAGE = "Krissy Curtis Realty";
 
 const DEMO_DISCLAIMER =
-  "This is a fictional demo listing created to showcase the KM Curtis Realty website and does not represent a real property currently or previously for sale. Data will be replaced by a licensed MLS/IDX feed prior to launch.";
+  "This is a fictional demo listing created to showcase the Krissy Curtis Realty website and does not represent a real property currently or previously for sale. Data will be replaced by a licensed MLS/IDX feed prior to launch.";
 
 const properties: Property[] = [
   {
@@ -252,7 +252,7 @@ const properties: Property[] = [
     state: "MD",
     zip: "21401",
     neighborhood: "Cape St. Claire",
-    communitySlug: "cape-st-claire",
+    communitySlug: "broadneck",
     price: 2350000,
     beds: 6,
     baths: 5,

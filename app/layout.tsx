@@ -23,17 +23,17 @@ const SITE_URL = "https://www.kmcurtisrealty.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "KM Curtis Realty | Annapolis & Chesapeake Bay Real Estate",
-    template: "%s | KM Curtis Realty",
+    default: "Krissy Curtis Realty | Annapolis & Chesapeake Bay Real Estate",
+    template: "%s | Krissy Curtis Realty",
   },
   description:
-    "Real estate, Maryland living, and your next chapter. Krissy Curtis and KM Curtis Realty help buyers and sellers navigate Annapolis and the Chesapeake Bay region.",
+    "Real estate, Maryland living, and your next chapter. Krissy Curtis helps buyers and sellers navigate Annapolis and the Chesapeake Bay region.",
   openGraph: {
-    title: "KM Curtis Realty | Annapolis & Chesapeake Bay Real Estate",
+    title: "Krissy Curtis Realty | Annapolis & Chesapeake Bay Real Estate",
     description:
       "Real estate, Maryland living, and your next chapter. Serving Annapolis and the Chesapeake Bay region.",
     url: SITE_URL,
-    siteName: "KM Curtis Realty",
+    siteName: "Krissy Curtis Realty",
     locale: "en_US",
     type: "website",
   },

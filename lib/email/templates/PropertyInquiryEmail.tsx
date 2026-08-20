@@ -27,7 +27,7 @@ export function PropertyInquiryEmail({ submission }: PropertyInquiryEmailProps) 
       <Body style={main}>
         <Container style={container}>
           <Heading style={heading}>New Property Inquiry</Heading>
-          <Text style={text}>KM Curtis Realty website — {sourcePage}</Text>
+          <Text style={text}>Krissy Curtis Realty website — {sourcePage}</Text>
           <Hr style={hr} />
           <Section>
             <Text style={label}>Property</Text>
@@ -53,7 +53,7 @@ export function PropertyInquiryEmail({ submission }: PropertyInquiryEmailProps) 
             <Text style={text}>{message}</Text>
           </Section>
           <Hr style={hr} />
-          <Text style={footer}>Sent automatically from the KM Curtis Realty website property inquiry form.</Text>
+          <Text style={footer}>Sent automatically from the Krissy Curtis Realty website property inquiry form.</Text>
         </Container>
       </Body>
     </Html>

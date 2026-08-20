@@ -18,7 +18,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-mist/70 bg-shell/95 backdrop-blur">
       <Container className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3" aria-label="KM Curtis Realty home">
-          <Image src="/images/brand/km-monogram.svg" alt="" width={44} height={44} priority />
+          <Image src="/images/brand/km-logo.png" alt="" width={44} height={44} priority />
           <span className="hidden font-display text-lg text-ink sm:block">
             KM Curtis Realty
           </span>
@@ -41,16 +41,16 @@ export function SiteHeader() {
               {item.children ? (
                 <div
                   className={cn(
-                    "absolute left-1/2 top-full z-10 w-48 -translate-x-1/2 pt-3 transition-opacity duration-150",
+                    "absolute left-1/2 top-full z-10 w-[34rem] -translate-x-1/2 pt-3 transition-opacity duration-150",
                     openDropdown === item.label ? "opacity-100" : "pointer-events-none opacity-0",
                   )}
                 >
-                  <div className="rounded-2xl border border-mist bg-shell shadow-soft-lg overflow-hidden">
+                  <div className="grid grid-cols-2 gap-x-2 gap-y-1 rounded-2xl border border-mist bg-shell p-3 shadow-soft-lg">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-3 text-xs font-medium uppercase tracking-wide text-ink/80 hover:bg-mist/50 hover:text-bay-teal"
+                        className="rounded-control block px-4 py-2.5 text-xs font-medium uppercase tracking-wide text-ink/80 hover:bg-mist/50 hover:text-bay-teal"
                       >
                         {child.label}
                       </Link>

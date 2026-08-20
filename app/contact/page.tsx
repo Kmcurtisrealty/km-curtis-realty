@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { IntroSection } from "@/components/home/IntroSection";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with KM Curtis Realty to talk through buying, selling, or relocating to the Annapolis and Chesapeake Bay region.",
+  description: "Get in touch with Krissy Curtis Realty to talk through buying, selling, or relocating to the Annapolis and Chesapeake Bay region.",
 };
 
 export default function ContactPage() {
@@ -41,6 +42,8 @@ export default function ContactPage() {
           <ContactForm />
         </div>
       </Container>
+
+      <IntroSection />
     </div>
   );
 }

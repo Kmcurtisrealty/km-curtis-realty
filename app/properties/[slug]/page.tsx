@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PropertyPageProps): Promise<M
   const property = getPropertyBySlug(slug);
   if (!property) return {};
 
-  const title = property.seo?.title ?? `${property.address}, ${property.city} ${property.state} | KM Curtis Realty`;
+  const title = property.seo?.title ?? `${property.address}, ${property.city} ${property.state} | Krissy Curtis Realty`;
   const description =
     property.seo?.description ??
     `${STATUS_LABELS[property.status]} in ${property.city}, ${property.state} — ${property.beds || "—"} bed, ${

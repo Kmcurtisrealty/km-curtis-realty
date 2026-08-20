@@ -12,8 +12,8 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Link href="/" className="flex items-center gap-3">
-              <Image src="/images/brand/km-monogram.svg" alt="KM Curtis Realty" width={44} height={44} />
-              <span className="font-display text-lg">KM Curtis Realty</span>
+              <Image src="/images/brand/km-logo-white.png" alt="KM Curtis Realty" width={44} height={44} />
+              <span className="font-display text-lg">Krissy Curtis Realty</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-shell/70">
               Real estate, Maryland living, and your next chapter — serving Annapolis and the
@@ -66,7 +66,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-shell/10 pt-8 text-xs text-shell/50 md:flex-row md:items-center md:justify-between">
-          <p>&copy; {year} KM Curtis Realty. All rights reserved.</p>
+          <p>&copy; {year} Krissy Curtis Realty. All rights reserved.</p>
           <p className="max-w-2xl leading-relaxed">
             Equal Housing Opportunity. This website contains fictional demo property listings for
             development purposes and does not represent real properties currently or previously

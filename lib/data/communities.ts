@@ -1,16 +1,19 @@
 import type { Community } from "@/lib/types/community";
 
 /**
- * Community data. All 16 communities named in the master spec are built out
- * here against the shared CommunityOverview template — Annapolis and
- * Severna Park from Phase 1, plus the remaining 14 (pure data entry, no new
- * component code) added afterward: Eastport, West Annapolis, Hillsmere,
- * Cape St. Claire, Broadneck, Arnold, Edgewater, Mayo, Galesville,
+ * Community data, built out against the shared CommunityOverview template:
+ * Annapolis, Severna Park, Broadneck, Arnold, Edgewater, Galesville,
  * Shady Side, Crofton, Davidsonville, Pasadena, Millersville.
  *
+ * (Eastport, West Annapolis, Hillsmere Shores, Cape St. Claire, and Mayo
+ * were removed as standalone pages at the user's request; Eastport and
+ * West Annapolis remain as named neighborhoods within Annapolis's own
+ * page copy, and Cape St. Claire remains a named neighborhood within
+ * Broadneck's.)
+ *
  * Demo properties in lib/data/properties.ts reference several of these
- * slugs (e.g. "edgewater", "cape-st-claire") via `communitySlug` — those
- * cross-references now resolve to real community pages.
+ * slugs (e.g. "edgewater", "broadneck") via `communitySlug` — those
+ * cross-references resolve to real community pages.
  */
 
 const communities: Community[] = [
@@ -44,7 +47,7 @@ const communities: Community[] = [
     seo: {
       title: "Annapolis MD Real Estate | Homes & Waterfront Properties",
       description:
-        "Explore homes for sale in Annapolis, MD, including waterfront properties, downtown condos, and family neighborhoods, with local guidance from KM Curtis Realty.",
+        "Explore homes for sale in Annapolis, MD, including waterfront properties, downtown condos, and family neighborhoods, with local guidance from Krissy Curtis Realty.",
     },
   },
   {
@@ -79,136 +82,6 @@ const communities: Community[] = [
       title: "Severna Park MD Real Estate | Homes for Sale",
       description:
         "Find homes for sale in Severna Park, MD — top-rated schools, community water access, and an easy commute to Annapolis and Baltimore.",
-    },
-  },
-  {
-    slug: "eastport",
-    name: "Eastport",
-    heroImage: {
-      src: "/images/communities/eastport-hero.svg",
-      alt: "Sailboats and rowhome rooflines along Eastport's Spa Creek waterfront",
-    },
-    tagline: "Annapolis's maritime neighborhood, a drawbridge away from City Dock.",
-    description:
-      "Eastport sits on its own peninsula across Spa Creek from downtown Annapolis, connected by the Spa Creek Bridge (locally, the \"Ego Alley\" crossing) and a walkable footbridge for pedestrians and cyclists. It's long been the working end of Annapolis's sailing culture — boatyards, sail lofts, and marinas sit alongside a dense mix of cottages, rowhomes, and newer waterfront construction.",
-    lifestyle:
-      "Eastport has a proudly informal, boat-shoes-and-foul-weather-gear identity, anchored by neighborhood pubs and seafood spots along Fourth Street and Bay Ridge Avenue. Maritime traditions run deep here, including the long-running (tongue-in-cheek) \"rivalry\" with downtown Annapolis and a genuine working-waterfront feel that's increasingly rare this close to a state capital.",
-    waterfront:
-      "Deep water on Spa Creek and Back Creek makes Eastport one of the most boat-friendly addresses in the region, with private docks, marinas, and yacht clubs concentrated along its shoreline. Homes range from creekfront properties with private slips to interior streets a short walk from public water access.",
-    schools: "Served by Anne Arundel County Public Schools; specific elementary, middle, and high school assignments vary by street and are worth confirming directly, since Eastport sits close to several school boundary lines.",
-    commute:
-      "Roughly 30 minutes to Washington, D.C. and about 25 minutes to BWI Airport via US-50, with downtown Annapolis itself a short walk or bike ride across the bridge.",
-    neighborhoods: ["Bay Ridge Avenue corridor", "Spa Creek waterfront", "Back Creek", "Historic Eastport"],
-    localAttractions: [
-      "Eastport Yacht Club & Annapolis Yacht Club",
-      "Fourth Street restaurant row",
-      "Spa Creek & Back Creek marinas",
-      "Truxtun Park",
-      "Annapolis Maritime Museum & Park",
-    ],
-    relocationInfo:
-      "Buyers relocating for boating access or a more walkable, low-key alternative to downtown Annapolis often land in Eastport first. We help incoming buyers weigh creekfront premiums against interior-street value and confirm dock/slip rights before writing an offer, since those vary block by block.",
-    seo: {
-      title: "Eastport Annapolis MD Real Estate | Waterfront Homes",
-      description:
-        "Discover homes for sale in Eastport, Annapolis's maritime neighborhood on Spa Creek — waterfront cottages, dockable properties, and walkable local charm.",
-    },
-  },
-  {
-    slug: "west-annapolis",
-    name: "West Annapolis",
-    heroImage: {
-      src: "/images/communities/west-annapolis-hero.svg",
-      alt: "Small-town storefronts and tree-lined streets in West Annapolis",
-    },
-    tagline: "A walkable in-town village feel just outside Annapolis's historic core.",
-    description:
-      "West Annapolis is a compact, walkable neighborhood centered on a small commercial strip along Annapolis Street and Melvin Avenue, distinct from — and generally more affordable than — the historic downtown a couple of miles away. Tree-lined streets carry a mix of early-to-mid-20th-century cottages and bungalows alongside newer infill homes.",
-    lifestyle:
-      "Life here leans on the neighborhood's own small commercial strip — a coffee shop, a few restaurants, a hardware store — plus easy access to both downtown Annapolis and the Route 50/Rowe Boulevard corridor. It's a favored spot for buyers who want in-town walkability without downtown's price premium.",
-    waterfront:
-      "West Annapolis is not a waterfront neighborhood itself, but it sits close to College Creek and is a short drive from Annapolis's broader waterfront amenities, marinas, and public water access points.",
-    schools: "Served by Anne Arundel County Public Schools; the neighborhood is within reach of several well-regarded elementary options, with exact assignments worth confirming street by street.",
-    commute:
-      "Convenient to Rowe Boulevard and US-50, putting downtown Annapolis, the Naval Academy, and the greater Annapolis medical corridor within a short drive; about 30 minutes to Washington, D.C.",
-    neighborhoods: ["Annapolis Street corridor", "Melvin Avenue", "President Hill area", "Wardour (adjacent)"],
-    localAttractions: [
-      "West Annapolis shops & cafes",
-      "Anne Arundel Medical Center (Luminis Health) area",
-      "College Creek",
-      "Farmers' market pop-ups",
-      "Quick access to downtown Annapolis",
-    ],
-    relocationInfo:
-      "West Annapolis appeals to relocating buyers who want a real neighborhood center — shops and restaurants within walking distance — without downtown Annapolis pricing. We help buyers compare it directly against Murray Hill and Wardour for the walkability-to-value tradeoff.",
-    seo: {
-      title: "West Annapolis MD Real Estate | Homes for Sale",
-      description:
-        "Explore homes for sale in West Annapolis, MD — a walkable in-town neighborhood with its own shops, cafes, and easy access to downtown Annapolis.",
-    },
-  },
-  {
-    slug: "hillsmere",
-    name: "Hillsmere Shores",
-    heroImage: {
-      src: "/images/communities/hillsmere-hero.svg",
-      alt: "Private community beach and sailboats along the South River at Hillsmere",
-    },
-    tagline: "A private beach-and-pool community on the South River, minutes from downtown Annapolis.",
-    description:
-      "Hillsmere Shores is a established waterfront-adjacent community on a peninsula between the South River and Duvall Creek, a few miles south of downtown Annapolis. Housing stock is largely mid-century ranchers and split-levels on generous lots, with a steady stream of updates and additions as buyers modernize the original homes.",
-    lifestyle:
-      "The community's private beach, pool, and marina are the social center of Hillsmere life, especially in summer. It has a low-key, family-and-retiree mix, with residents drawn to the combination of water access and a shorter commute into Annapolis than many other South River communities offer.",
-    waterfront:
-      "Hillsmere's defining feature is deeded access to its private community beach and marina on the South River, available even to homes not directly on the water — broadening the water-lifestyle budget considerably compared to true waterfront pricing.",
-    schools: "Served by Anne Arundel County Public Schools; specific school assignments should be confirmed for individual streets within the community.",
-    commute:
-      "About 10–15 minutes to downtown Annapolis and roughly 35–40 minutes to Washington, D.C. via US-50/Route 2.",
-    neighborhoods: ["Hillsmere Shores", "Berrywood", "Higham"],
-    localAttractions: [
-      "Hillsmere community beach, pool & marina",
-      "Quiet Waters Park (nearby)",
-      "South River access points",
-      "Bay Ridge & Annapolis Neck shopping",
-    ],
-    relocationInfo:
-      "Families relocating for community water access without a waterfront-home price tag frequently consider Hillsmere. We walk buyers through the community's HOA structure and amenity access before they tour, since deeded beach/marina rights are central to the value proposition here.",
-    seo: {
-      title: "Hillsmere Shores MD Real Estate | Homes Near Annapolis",
-      description:
-        "Find homes for sale in Hillsmere Shores, a private beach-and-marina community on the South River just minutes from downtown Annapolis.",
-    },
-  },
-  {
-    slug: "cape-st-claire",
-    name: "Cape St. Claire",
-    heroImage: {
-      src: "/images/communities/cape-st-claire-hero.svg",
-      alt: "Sunset over the Magothy River shoreline at Cape St. Claire",
-    },
-    tagline: "A Broadneck Peninsula boating community on the Chesapeake Bay and Magothy River.",
-    description:
-      "Cape St. Claire is a large, established community on the Broadneck Peninsula between the Magothy River and the Chesapeake Bay, developed largely from the mid-20th century onward. It offers one of the area's broadest ranges of housing — from modest capes and ranchers to larger updated and new-construction homes — with a strong sense of community identity.",
-    lifestyle:
-      "The community's private beaches, marina, and boat ramp anchor a genuinely active boating and outdoor lifestyle, complemented by its own volunteer fire department, elementary school, and library that give Cape St. Claire a small-town feel within commuting distance of Annapolis and Baltimore.",
-    waterfront:
-      "Cape St. Claire includes both directly waterfront homes on the Magothy and Chesapeake Bay and interior homes with deeded access to community beaches, piers, and a marina — a structure similar to Severna Park's community-access neighborhoods.",
-    schools: "Served by Anne Arundel County Public Schools, including a community elementary school within Cape St. Claire itself; middle and high school assignments should be confirmed by address.",
-    commute:
-      "About 15–20 minutes to Annapolis, 30–35 minutes to Baltimore via I-97, and roughly 45 minutes to Washington, D.C.",
-    neighborhoods: ["Cape St. Claire proper", "Little Magothy waterfront", "Cypress Cove (adjacent)"],
-    localAttractions: [
-      "Cape St. Claire community beaches & marina",
-      "Cape St. Claire Elementary",
-      "Magothy River access points",
-      "B&A Trail (nearby)",
-    ],
-    relocationInfo:
-      "Cape St. Claire draws relocating families looking for an established, amenity-rich community with a wide range of price points under one HOA umbrella. We help buyers understand which sections carry direct water access versus community-access-only rights, since that distinction drives price more than square footage in this neighborhood.",
-    seo: {
-      title: "Cape St. Claire MD Real Estate | Homes for Sale",
-      description:
-        "Browse homes for sale in Cape St. Claire, a Broadneck Peninsula boating community on the Magothy River and Chesapeake Bay near Annapolis.",
     },
   },
   {
@@ -305,37 +178,6 @@ const communities: Community[] = [
       title: "Edgewater MD Real Estate | South River Homes for Sale",
       description:
         "Discover homes for sale in Edgewater, MD, on the South and Rhode Rivers — waterfront living minutes from downtown Annapolis across the South River Bridge.",
-    },
-  },
-  {
-    slug: "mayo",
-    name: "Mayo",
-    heroImage: {
-      src: "/images/communities/mayo-hero.svg",
-      alt: "Marsh grass and open water on the peninsula between the South and Rhode Rivers at Mayo",
-    },
-    tagline: "A quiet peninsula community between the South and Rhode Rivers.",
-    description:
-      "Mayo occupies a narrow peninsula bounded by the South River and Rhode River, just southeast of Edgewater. It's a smaller, more low-key community than its Annapolis-adjacent neighbors, with a mix of older cottages, waterfront homes, and newer construction spread along winding, tree-shaded roads.",
-    lifestyle:
-      "Mayo's pace is unhurried and water-oriented, with the Beverly Beach community park and beach a local gathering point. It appeals to buyers looking for a genuinely quieter peninsula setting while remaining within a short drive of Annapolis.",
-    waterfront:
-      "With water on two sides — the South River and the Rhode River — much of Mayo offers direct or near-direct water access, including community beach access at Beverly Beach and numerous private docks along the shoreline.",
-    schools: "Served by Anne Arundel County Public Schools; specific assignments should be confirmed by address given Mayo's peninsula geography.",
-    commute:
-      "About 15–20 minutes to downtown Annapolis and roughly 40–45 minutes to Washington, D.C.",
-    neighborhoods: ["Beverly Beach", "Rhode River waterfront", "South River waterfront (Mayo side)"],
-    localAttractions: [
-      "Beverly Beach community park",
-      "Rhode River & South River access",
-      "Quiet, low-traffic peninsula roads",
-    ],
-    relocationInfo:
-      "Mayo suits relocating buyers prioritizing quiet and water proximity over amenities and density. We help buyers weigh Mayo's smaller-community feel against Edgewater's slightly larger inventory and more built-out commercial corridor nearby.",
-    seo: {
-      title: "Mayo MD Real Estate | Homes for Sale",
-      description:
-        "Explore homes for sale in Mayo, MD, a quiet peninsula community between the South and Rhode Rivers near Annapolis.",
     },
   },
   {

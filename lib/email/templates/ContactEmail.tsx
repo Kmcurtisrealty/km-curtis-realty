@@ -15,7 +15,7 @@ export function ContactEmail({ submission }: ContactEmailProps) {
       <Body style={main}>
         <Container style={container}>
           <Heading style={heading}>New Contact Form Submission</Heading>
-          <Text style={text}>KM Curtis Realty website — {sourcePage}</Text>
+          <Text style={text}>Krissy Curtis Realty website — {sourcePage}</Text>
           <Hr style={hr} />
           <Section>
             <Text style={label}>Name</Text>
@@ -28,7 +28,7 @@ export function ContactEmail({ submission }: ContactEmailProps) {
             <Text style={text}>{message}</Text>
           </Section>
           <Hr style={hr} />
-          <Text style={footer}>Sent automatically from the KM Curtis Realty website contact form.</Text>
+          <Text style={footer}>Sent automatically from the Krissy Curtis Realty website contact form.</Text>
         </Container>
       </Body>
     </Html>

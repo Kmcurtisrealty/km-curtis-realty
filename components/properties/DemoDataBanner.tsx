@@ -17,7 +17,7 @@ export function DemoDataBanner({ disclaimer }: DemoDataBannerProps) {
         <p className="text-xs leading-relaxed text-ink/70">
           <span className="font-medium uppercase tracking-wide text-ink">Demo Listing — Not a Real Property. </span>
           {disclaimer ??
-            "This page uses fictional demo content created to preview the KM Curtis Realty website and does not represent an actual property currently or previously for sale."}
+            "This page uses fictional demo content created to preview the Krissy Curtis Realty website and does not represent an actual property currently or previously for sale."}
         </p>
       </div>
     </div>

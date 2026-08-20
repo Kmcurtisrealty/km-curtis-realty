@@ -1,6 +1,5 @@
 import { getFeaturedProperties, getRecentSales, getWaterfrontProperties } from "@/lib/data/properties";
 import { Hero } from "@/components/home/Hero";
-import { IntroSection } from "@/components/home/IntroSection";
 import { SearchHomesCTA } from "@/components/home/SearchHomesCTA";
 import { FeaturedPropertiesSection } from "@/components/home/FeaturedPropertiesSection";
 import { ExploreCommunitiesSection } from "@/components/home/ExploreCommunitiesSection";
@@ -20,7 +19,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <IntroSection />
       <SearchHomesCTA />
       <FeaturedPropertiesSection
         eyebrow="Current Listings"

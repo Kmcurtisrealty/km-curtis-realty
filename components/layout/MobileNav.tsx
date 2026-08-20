@@ -28,7 +28,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
     >
       <div className="flex items-center justify-between px-6 py-5">
         <Link href="/" onClick={onClose} className="flex items-center gap-2">
-          <Image src="/images/brand/km-monogram.svg" alt="KM Curtis Realty" width={40} height={40} />
+          <Image src="/images/brand/km-logo-white.png" alt="KM Curtis Realty" width={40} height={40} />
         </Link>
         <button
           type="button"
