@@ -280,8 +280,8 @@ const communities: Community[] = [
     slug: "davidsonville",
     name: "Davidsonville",
     heroImage: {
-      src: "/images/communities/davidsonville-hero.svg",
-      alt: "Open farmland and mature trees on large lots in rural Davidsonville",
+      src: "/images/communities/davidsonville-hero.jpg",
+      alt: "Horses grazing at sunrise on a Davidsonville horse farm",
     },
     tagline: "Large-lot, semi-rural living between Annapolis and Washington.",
     description:
