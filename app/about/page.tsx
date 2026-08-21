@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { RotatingTestimonials } from "@/components/ui/RotatingTestimonials";
+import { getAllTestimonials } from "@/lib/data/testimonials";
 
 export const metadata: Metadata = {
   title: "About",
@@ -9,37 +12,56 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const testimonials = getAllTestimonials();
+
   return (
-    <section className="py-24">
-      <Container className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
-        <div className="relative order-2 aspect-[4/5] overflow-hidden rounded-card shadow-soft md:order-1">
-          <Image
-            src="/images/brand/krissy-headshot.jpg"
-            alt="Krissy Curtis"
-            fill
-            sizes="(min-width: 768px) 45vw, 100vw"
-            className="object-cover"
-          />
-        </div>
-        <div className="order-1 md:order-2">
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">About</p>
-          <h1 className="text-display-lg font-display text-ink">Krissy Curtis</h1>
-          <p className="mt-6 text-base leading-relaxed text-ink/75">
-            A full biography, credentials, and press page for Krissy Curtis
-            is on its way. In short: Krissy is a local Annapolis-area agent and host of American
-            Dream TV, focused on genuinely helping buyers and sellers make the right real estate
-            decision — not just close a transaction.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact" variant="primary" size="lg">
-              Let&rsquo;s Connect
-            </Button>
-            <Button href="/properties" variant="secondary" size="lg">
-              Search Homes
-            </Button>
+    <>
+      <section className="py-24">
+        <Container className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+          <div className="relative order-2 aspect-[4/5] overflow-hidden rounded-card shadow-soft md:order-1">
+            <Image
+              src="/images/brand/krissy-headshot.jpg"
+              alt="Krissy Curtis"
+              fill
+              sizes="(min-width: 768px) 45vw, 100vw"
+              className="object-cover"
+            />
           </div>
-        </div>
-      </Container>
-    </section>
+          <div className="order-1 md:order-2">
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">About</p>
+            <h1 className="text-display-lg font-display text-ink">Krissy Curtis</h1>
+            <p className="mt-6 text-base leading-relaxed text-ink/75">
+              A full biography, credentials, and press page for Krissy Curtis
+              is on its way. In short: Krissy is a local Annapolis-area agent and host of American
+              Dream TV, focused on genuinely helping buyers and sellers make the right real estate
+              decision — not just close a transaction.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button href="/contact" variant="primary" size="lg">
+                Let&rsquo;s Connect
+              </Button>
+              <Button href="/properties" variant="secondary" size="lg">
+                Search Homes
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {testimonials.length > 0 ? (
+        <section className="bg-bg-alt py-20">
+          <Container className="max-w-3xl">
+            <SectionHeading eyebrow="Client Stories" title="What Clients Say" align="center" className="mx-auto" />
+            <div className="mt-10">
+              <RotatingTestimonials testimonials={testimonials} />
+            </div>
+            <p className="mt-8 text-center text-[11px] uppercase tracking-[0.15em] text-ink/40">
+              Placeholder testimonials shown for development — to be replaced with verified client
+              reviews.
+            </p>
+          </Container>
+        </section>
+      ) : null}
+    </>
   );
 }

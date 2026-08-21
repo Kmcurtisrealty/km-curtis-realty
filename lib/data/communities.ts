@@ -88,8 +88,8 @@ const communities: Community[] = [
     slug: "broadneck",
     name: "Broadneck",
     heroImage: {
-      src: "/images/communities/broadneck-hero.svg",
-      alt: "Wooded peninsula shoreline along the Broadneck peninsula between the Severn and Magothy Rivers",
+      src: "/images/communities/broadneck-hero.jpg",
+      alt: "Walkers on a wooded trail through the Broadneck peninsula",
     },
     tagline: "The wooded peninsula between the Severn and Magothy Rivers, anchored by the Broadneck school cluster.",
     description:
