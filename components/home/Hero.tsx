@@ -6,8 +6,8 @@ export function Hero() {
   return (
     <section className="relative flex h-[88vh] min-h-[560px] items-end overflow-hidden bg-ink">
       <Image
-        src="/images/brand/hero-chesapeake-sunset.jpg"
-        alt="Sunset over the Chesapeake Bay"
+        src="/images/brand/hero-sunset-sailboat.jpg"
+        alt="Sailboat silhouetted against a sunset over the water"
         fill
         priority
         sizes="100vw"
@@ -19,7 +19,7 @@ export function Hero() {
           Krissy Curtis Realty &middot; Annapolis &amp; the Chesapeake Bay
         </p>
         <h1 className="max-w-3xl text-display-xl font-display leading-[1.05]">
-          Real Estate. Maryland Living. Your Next Chapter.
+          Maryland Living. Your Next Chapter.
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-shell/85 md:text-lg">
           Explore homes, waterfront properties, and distinctive communities throughout Annapolis
