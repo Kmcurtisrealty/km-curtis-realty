@@ -17,8 +17,8 @@ function img(id: string, alt: string, isPrimary = false): PropertyImage {
 
 const DEMO_AGENT = {
   name: "Krissy Curtis",
-  phone: "(410) 555-0148",
-  email: "kmcurtisrealty@gmail.com",
+  phone: "(443) 758-3501",
+  email: "Krissy@Kmcurtisrealty.com",
   licenseNumber: "MD-DEMO-00000",
 };
 

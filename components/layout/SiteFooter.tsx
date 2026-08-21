@@ -75,13 +75,13 @@ export function SiteFooter() {
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-shell/50">Contact</p>
             <ul className="space-y-2 text-sm text-shell/80">
               <li>
-                <a href="mailto:kmcurtisrealty@gmail.com" className="hover:text-shell">
-                  kmcurtisrealty@gmail.com
+                <a href="mailto:Krissy@Kmcurtisrealty.com" className="hover:text-shell">
+                  Krissy@Kmcurtisrealty.com
                 </a>
               </li>
               <li>
-                <a href="tel:+14105550148" className="hover:text-shell">
-                  (410) 555-0148
+                <a href="tel:+14437583501" className="hover:text-shell">
+                  (443) 758-3501
                 </a>
               </li>
               <li>Annapolis, MD</li>

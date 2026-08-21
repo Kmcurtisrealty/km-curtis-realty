@@ -9,7 +9,7 @@ export function MobileStickyCTA() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-30 flex items-stretch gap-2 border-t border-mist bg-shell/95 p-3 backdrop-blur pb-[max(0.75rem,env(safe-area-inset-bottom))] md:hidden">
       <a
-        href="tel:+14105550148"
+        href="tel:+14437583501"
         aria-label="Call Krissy Curtis"
         className="flex items-center justify-center rounded-full border border-ink/20 px-4 text-ink"
       >

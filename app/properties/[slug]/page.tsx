@@ -160,7 +160,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                 right fit for you.
               </p>
               <div className="mt-6 flex flex-col gap-3">
-                <Button href="tel:+14105550148" variant="primary" className="w-full">
+                <Button href="tel:+14437583501" variant="primary" className="w-full">
                   Schedule a Showing
                 </Button>
               </div>

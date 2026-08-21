@@ -23,4 +23,4 @@ export function getResend(): Resend {
 }
 
 export const RESEND_FROM_EMAIL = process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev";
-export const LEAD_NOTIFICATION_EMAIL = process.env.LEAD_NOTIFICATION_EMAIL ?? "kmcurtisrealty@gmail.com";
+export const LEAD_NOTIFICATION_EMAIL = process.env.LEAD_NOTIFICATION_EMAIL ?? "Krissy@Kmcurtisrealty.com";

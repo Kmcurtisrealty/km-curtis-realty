@@ -23,13 +23,13 @@ export default function ContactPage() {
           </p>
 
           <div className="mt-10 space-y-5">
-            <a href="mailto:kmcurtisrealty@gmail.com" className="flex items-center gap-3 text-sm text-ink/80 hover:text-bay-teal">
+            <a href="mailto:Krissy@Kmcurtisrealty.com" className="flex items-center gap-3 text-sm text-ink/80 hover:text-bay-teal">
               <Mail className="h-4 w-4 text-bay-teal" aria-hidden="true" />
-              kmcurtisrealty@gmail.com
+              Krissy@Kmcurtisrealty.com
             </a>
-            <a href="tel:+14105550148" className="flex items-center gap-3 text-sm text-ink/80 hover:text-bay-teal">
+            <a href="tel:+14437583501" className="flex items-center gap-3 text-sm text-ink/80 hover:text-bay-teal">
               <Phone className="h-4 w-4 text-bay-teal" aria-hidden="true" />
-              (410) 555-0148
+              (443) 758-3501
             </a>
             <p className="flex items-center gap-3 text-sm text-ink/80">
               <MapPin className="h-4 w-4 text-bay-teal" aria-hidden="true" />
