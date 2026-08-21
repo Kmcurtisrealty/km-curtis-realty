@@ -7,7 +7,6 @@ import { WhyKMCurtisSection } from "@/components/home/WhyKMCurtisSection";
 import { SellYourHomeSection } from "@/components/home/SellYourHomeSection";
 import { AmericanDreamTVSection } from "@/components/home/AmericanDreamTVSection";
 import { RelocationTeaserSection } from "@/components/home/RelocationTeaserSection";
-import { GuidesTeaserSection } from "@/components/home/GuidesTeaserSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { FinalCTASection } from "@/components/home/FinalCTASection";
 
@@ -45,7 +44,6 @@ export default function HomePage() {
       <SellYourHomeSection />
       <AmericanDreamTVSection />
       <RelocationTeaserSection />
-      <GuidesTeaserSection />
       <TestimonialsSection />
       <FinalCTASection />
     </>

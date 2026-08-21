@@ -10,10 +10,9 @@ interface ComingSoonPageProps {
 }
 
 /**
- * Minimal stub for the nav items not fully built in Phase 1
- * (/buy, /sell, /american-dream-tv, /about, /resources) so the nav is
- * clickable with nothing broken. (/relocate and /lifestyle were removed
- * entirely rather than staying as stubs — see the Phase 2 redesign notes.)
+ * Minimal stub for nav items not fully built out yet (/buy, /sell) so the
+ * nav is clickable with nothing broken. (/relocate, /lifestyle, and
+ * /resources were removed entirely rather than staying as stubs.)
  */
 export function ComingSoonPage({
   eyebrow,

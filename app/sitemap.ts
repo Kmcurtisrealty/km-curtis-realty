@@ -11,7 +11,6 @@ const STATIC_ROUTES = [
   "/properties",
   "/american-dream-tv",
   "/about",
-  "/resources",
   "/contact",
 ];
 

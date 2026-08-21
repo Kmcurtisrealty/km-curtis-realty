@@ -30,5 +30,4 @@ export const NAV_ITEMS: NavItem[] = [
   },
   { label: "American Dream TV", href: "/american-dream-tv" },
   { label: "About", href: "/about" },
-  { label: "Resources", href: "/resources" },
 ];
