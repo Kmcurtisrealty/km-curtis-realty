@@ -1,7 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
 import { NAV_ITEMS } from "@/components/layout/navItems";
 import { Container } from "@/components/ui/Container";
+import { TikTokIcon } from "@/components/ui/TikTokIcon";
+
+const SOCIAL_LINKS = [
+  { label: "Instagram", href: "https://www.instagram.com/km_curtis_realty/", Icon: Instagram },
+  { label: "Facebook", href: "https://www.facebook.com/KrissyCurtisRealty", Icon: Facebook },
+  { label: "YouTube", href: "https://www.youtube.com/@KrissyCurtis", Icon: Youtube },
+  { label: "TikTok", href: "https://www.tiktok.com/@krissy_curtis", Icon: TikTokIcon },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/kristen-curtis-9bb455181/", Icon: Linkedin },
+];
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -19,6 +29,20 @@ export function SiteFooter() {
               Real estate, Maryland living, and your next chapter — serving Annapolis and the
               Chesapeake Bay region.
             </p>
+            <div className="mt-6 flex items-center gap-4">
+              {SOCIAL_LINKS.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="text-shell/70 transition-colors hover:text-shell"
+                >
+                  <Icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
           </div>
 
           <div>
