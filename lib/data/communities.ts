@@ -152,8 +152,8 @@ const communities: Community[] = [
     slug: "edgewater",
     name: "Edgewater",
     heroImage: {
-      src: "/images/communities/edgewater-hero.svg",
-      alt: "A single sailboat at dusk near a private dock in Edgewater",
+      src: "/images/communities/edgewater-hero.jpg",
+      alt: "A dock leading out to open water with waterfront homes and a sailboat in the distance",
     },
     tagline: "South River waterfront living just across the bridge from downtown Annapolis.",
     description:
@@ -216,8 +216,8 @@ const communities: Community[] = [
     slug: "shady-side",
     name: "Shady Side",
     heroImage: {
-      src: "/images/communities/shady-side-hero.svg",
-      alt: "Weathered dock pilings and workboats on Chesapeake Bay at Shady Side",
+      src: "/images/communities/shady-side-hero.jpg",
+      alt: "Sailboats docked at a marina in Shady Side",
     },
     tagline: "A watermen's peninsula community on the Chesapeake Bay south of Annapolis.",
     description:
