@@ -42,6 +42,7 @@ export function RotatingTestimonials({ testimonials, intervalMs = 6000 }: Rotati
       </blockquote>
       <figcaption className="mt-6 text-xs font-medium uppercase tracking-[0.12em] text-marsh">
         {current.name} &middot; {current.location}
+        <span className="block normal-case tracking-normal text-ink/40">via {current.source}</span>
       </figcaption>
 
       {testimonials.length > 1 ? (

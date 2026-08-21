@@ -22,14 +22,13 @@ export function TestimonialsSection() {
               </blockquote>
               <figcaption className="mt-6 text-xs uppercase tracking-[0.1em] text-shell/60">
                 {testimonial.name} &middot; {testimonial.location}
+                <span className="block normal-case tracking-normal text-shell/40">
+                  via {testimonial.source}
+                </span>
               </figcaption>
             </figure>
           ))}
         </div>
-        <p className="mt-8 text-center text-[11px] uppercase tracking-[0.15em] text-shell/40">
-          Placeholder testimonials shown for development — to be replaced with verified client
-          reviews.
-        </p>
       </Container>
     </section>
   );

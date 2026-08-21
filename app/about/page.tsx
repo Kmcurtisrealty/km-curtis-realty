@@ -55,10 +55,6 @@ export default function AboutPage() {
             <div className="mt-10">
               <RotatingTestimonials testimonials={testimonials} />
             </div>
-            <p className="mt-8 text-center text-[11px] uppercase tracking-[0.15em] text-ink/40">
-              Placeholder testimonials shown for development — to be replaced with verified client
-              reviews.
-            </p>
           </Container>
         </section>
       ) : null}
