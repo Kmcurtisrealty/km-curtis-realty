@@ -21,8 +21,8 @@ const communities: Community[] = [
     slug: "annapolis",
     name: "Annapolis",
     heroImage: {
-      src: "/images/communities/annapolis-hero.svg",
-      alt: "Sailboats on the water near downtown Annapolis at dusk",
+      src: "/images/communities/annapolis-hero.jpg",
+      alt: "The Maryland State House dome viewed from a downtown Annapolis street",
     },
     tagline: "Maryland's sailing capital, where colonial streets meet the Chesapeake Bay.",
     description:
