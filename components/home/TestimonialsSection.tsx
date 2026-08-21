@@ -3,7 +3,9 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function TestimonialsSection() {
-  const testimonials = getAllTestimonials();
+  const testimonials = [...getAllTestimonials()]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 3);
 
   return (
     <section className="bg-ink py-24 text-shell">
