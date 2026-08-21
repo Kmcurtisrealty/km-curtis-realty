@@ -153,7 +153,7 @@ const communities: Community[] = [
     name: "Edgewater",
     heroImage: {
       src: "/images/communities/edgewater-hero.jpg",
-      alt: "A dock leading out to open water with waterfront homes and a sailboat in the distance",
+      alt: "Aerial view of the South River Bridge and waterfront homes in fall foliage at sunset",
     },
     tagline: "South River waterfront living just across the bridge from downtown Annapolis.",
     description:
