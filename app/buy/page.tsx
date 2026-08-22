@@ -124,7 +124,7 @@ export default function BuyPage() {
               <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-marsh">Explore Where to Buy</p>
               <h2 className="text-display-md font-display text-ink">Communities Across Annapolis &amp; the Bay</h2>
               <p className="mt-4 text-base leading-relaxed text-ink/70">
-                From in-town Annapolis to quiet peninsula villages, every community has its own
+                From Downtown Annapolis to quiet peninsula villages, every community has its own
                 character, commute, and water access. Explore each one to find where you belong.
               </p>
             </div>
