@@ -18,9 +18,9 @@ export default function AmericanDreamTVPage() {
             Maryland Is More Than a Place to Live. <span className="block">It&rsquo;s a Lifestyle.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
-            Krissy Curtis hosts American Dream TV, a local lifestyle and real estate series covering
-            Annapolis and Chesapeake Bay communities, businesses, and the stories behind the homes
-            she represents.
+            Krissy Curtis hosts American Dream TV, a nationally broadcast lifestyle and real estate
+            series, bringing that same platform home to cover Annapolis and Chesapeake Bay
+            communities, businesses, and the stories behind the homes she represents.
           </p>
         </Container>
       </section>

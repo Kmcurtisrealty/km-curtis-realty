@@ -20,9 +20,9 @@ export function AmericanDreamTVSection() {
               Maryland Is More Than a Place to Live. <span className="block">It&rsquo;s a Lifestyle.</span>
             </h2>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-shell/85">
-              Krissy hosts American Dream TV, a local lifestyle and real estate series covering
-              Annapolis and Chesapeake Bay communities, businesses, and the stories behind the
-              homes she represents.
+              Krissy hosts American Dream TV, a nationally broadcast lifestyle and real estate
+              series, bringing that same platform home to cover Annapolis and Chesapeake Bay
+              communities, businesses, and the stories behind the homes she represents.
             </p>
             <div className="mt-8">
               <Button href="/american-dream-tv" variant="clay" size="lg">
