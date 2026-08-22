@@ -3,13 +3,13 @@ import type { Community } from "@/lib/types/community";
 /**
  * Community data, built out against the shared CommunityOverview template:
  * Annapolis, Severna Park, Broadneck, Arnold, Edgewater, Galesville,
- * Shady Side, Crofton, Davidsonville, Pasadena, Millersville.
+ * Shady Side, Davidsonville, Pasadena.
  *
- * (Eastport, West Annapolis, Hillsmere Shores, Cape St. Claire, and Mayo
- * were removed as standalone pages at the user's request; Eastport and
- * West Annapolis remain as named neighborhoods within Annapolis's own
- * page copy, and Cape St. Claire remains a named neighborhood within
- * Broadneck's.)
+ * (Eastport, West Annapolis, Hillsmere Shores, Cape St. Claire, Mayo,
+ * Crofton, and Millersville were removed as standalone pages at the user's
+ * request; Eastport and West Annapolis remain as named neighborhoods within
+ * Annapolis's own page copy, and Cape St. Claire remains a named
+ * neighborhood within Broadneck's.)
  *
  * Demo properties in lib/data/properties.ts reference several of these
  * slugs (e.g. "edgewater", "broadneck") via `communitySlug` — those
@@ -245,38 +245,6 @@ const communities: Community[] = [
     },
   },
   {
-    slug: "crofton",
-    name: "Crofton",
-    heroImage: {
-      src: "/images/communities/crofton-hero.svg",
-      alt: "Rolling lawns and suburban tree canopy in the planned community of Crofton",
-    },
-    tagline: "A planned suburban community between Annapolis, Washington, and Baltimore.",
-    description:
-      "Crofton is a planned suburban community developed beginning in the 1960s around a country club and golf course, straddling the Anne Arundel–Prince George's County line. It's inland rather than waterfront, offering larger lots, mature landscaping, and a more traditional suburban layout than the Chesapeake-adjacent communities closer to Annapolis.",
-    lifestyle:
-      "Crofton's identity is built around its golf course and country club, community parks, and a well-established town-center commercial area. It draws families and commuters who prioritize space, schools, and a central location over water access.",
-    waterfront: "Crofton is an inland community with no direct waterfront; residents typically drive to South River, West River, or Bay access points for boating.",
-    schools:
-      "Crofton is generally considered one of the stronger school draws in the corridor between Annapolis and Washington, with several highly-regarded elementary, middle, and high schools serving the area — exact ratings and boundary assignments shift over time and are worth verifying directly for a specific address.",
-    commute:
-      "Centrally located near Route 3/US-301 and MD-424, Crofton offers a genuinely balanced commute: roughly 20–25 minutes to Annapolis, 30–35 minutes to Washington, D.C., and about 35–40 minutes to Baltimore.",
-    neighborhoods: ["Crofton Country Club area", "Crofton Meadows", "Crofton Village", "Waugh Chapel (adjacent)"],
-    localAttractions: [
-      "Crofton Country Club & golf course",
-      "Crofton Community Park",
-      "Waugh Chapel Towne Centre shopping",
-      "Patuxent Research Refuge (nearby)",
-    ],
-    relocationInfo:
-      "Crofton is a frequent choice for relocating families balancing three commute destinations — Annapolis, D.C., and Baltimore — against strong schools and larger lots. We help incoming buyers weigh Crofton against Davidsonville and Odenton for the space-versus-commute tradeoff specific to their work location.",
-    seo: {
-      title: "Crofton MD Real Estate | Homes for Sale",
-      description:
-        "Explore homes for sale in Crofton, MD, a planned suburban community with a central commute to Annapolis, Washington, D.C., and Baltimore.",
-    },
-  },
-  {
     slug: "davidsonville",
     name: "Davidsonville",
     heroImage: {
@@ -337,37 +305,6 @@ const communities: Community[] = [
       title: "Pasadena MD Real Estate | Homes for Sale",
       description:
         "Browse homes for sale in Pasadena, MD, along the Baltimore-Annapolis corridor — waterfront and suburban neighborhoods on the Magothy River and Chesapeake Bay.",
-    },
-  },
-  {
-    slug: "millersville",
-    name: "Millersville",
-    heroImage: {
-      src: "/images/communities/millersville-hero.svg",
-      alt: "Wooded suburban neighborhoods along the Baltimore-Annapolis corridor in Millersville",
-    },
-    tagline: "A wooded, inland suburban community along the Baltimore-Annapolis corridor.",
-    description:
-      "Millersville sits inland along the Baltimore-Annapolis Boulevard/MD-3 corridor, roughly midway between the two cities. It's a wooded, primarily residential community without direct waterfront, offering a mix of established subdivisions and newer construction on generally larger lots than closer-in Annapolis neighborhoods.",
-    lifestyle:
-      "Millersville trades water access for space, tree cover, and a central commuting position, with the B&A Trail running through the area for biking and running. It appeals to buyers who want a quieter, more wooded setting within easy reach of both Annapolis and Baltimore.",
-    waterfront: "Millersville is an inland community with no direct waterfront; residents typically drive to Severna Park, Arnold, or Annapolis for boating and water access.",
-    schools: "Served by Anne Arundel County Public Schools; specific elementary, middle, and high school assignments vary by neighborhood within Millersville.",
-    commute:
-      "About 20 minutes to Annapolis, 20–25 minutes to Baltimore via MD-3/I-97, and roughly 15–20 minutes to BWI Airport — a genuinely central location for commuters with varied destinations.",
-    neighborhoods: ["Millersville proper", "Veterans Highway corridor", "Kinder Farm Park area"],
-    localAttractions: [
-      "Kinder Farm Park",
-      "B&A Trail",
-      "Anne Arundel County Fairgrounds",
-      "Piney Orchard shopping (nearby)",
-    ],
-    relocationInfo:
-      "Millersville is a common fit for relocating buyers whose commute or travel needs point toward BWI or split between Annapolis and Baltimore, and who are comfortable trading water access for a wooded, inland setting. We help clients weigh it against Severna Park for the space-versus-water-access tradeoff.",
-    seo: {
-      title: "Millersville MD Real Estate | Homes for Sale",
-      description:
-        "Find homes for sale in Millersville, MD, a wooded inland community along the Baltimore-Annapolis corridor, close to BWI Airport.",
     },
   },
 ];
