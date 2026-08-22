@@ -27,7 +27,7 @@ const points = [
   {
     icon: Tv,
     title: "National TV Exposure",
-    body: "Select homes are featured on American Dream TV, a nationally broadcast series — a level of exposure most listings never get.",
+    body: "Select homes are featured on American Dream TV, a nationally broadcast series — a level of home exposure most sellers never get.",
   },
   {
     icon: TrendingUp,
@@ -46,9 +46,10 @@ export default function SellPage() {
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">For Sellers</p>
           <h1 className="text-display-lg font-display">Sell With an Expert Who Gets Results</h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
-            Krissy Curtis is an expert in marketing and negotiating, with selected homes featured
-            on American Dream TV, a nationally broadcast series — giving your listing exposure most
-            homes never get.
+            Krissy is an expert in marketing, pricing, and negotiating your home with ease —
+            bringing steady, experienced guidance to every step of your sale. Selected homes are
+            even featured on American Dream TV, a nationally broadcast series, giving your home
+            exposure most sellers never get.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <Button href="/contact" variant="clay" size="lg">
