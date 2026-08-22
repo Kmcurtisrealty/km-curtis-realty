@@ -39,7 +39,7 @@ const steps = [
   {
     icon: Search,
     title: "Search & Discover",
-    body: "We start with what matters to you — commute, schools, water access, lifestyle — and narrow the region's 16+ communities down to the right fit.",
+    body: "We start with what matters to you — commute, schools, water access, lifestyle — and narrow the region's communities down to the right fit.",
   },
   {
     icon: ClipboardCheck,
