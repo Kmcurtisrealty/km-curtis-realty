@@ -77,9 +77,6 @@ export default function BuyPage() {
             <Button href="/properties" variant="clay" size="lg">
               Search Homes
             </Button>
-            <Button href="/contact" variant="secondary" size="lg" className="border-shell/40 text-shell hover:bg-shell/10">
-              Let&rsquo;s Connect
-            </Button>
           </div>
         </Container>
       </section>
@@ -149,14 +146,6 @@ export default function BuyPage() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button href="/properties" variant="clay" size="lg">
               Search Homes
-            </Button>
-            <Button
-              href="/contact"
-              variant="secondary"
-              size="lg"
-              className="border-shell/40 text-shell hover:bg-shell/10"
-            >
-              Let&rsquo;s Connect
             </Button>
           </div>
         </Container>
