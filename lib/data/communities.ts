@@ -3,13 +3,13 @@ import type { Community } from "@/lib/types/community";
 /**
  * Community data, built out against the shared CommunityOverview template:
  * Annapolis, Severna Park, Broadneck, Arnold, Edgewater, Galesville,
- * Shady Side, Davidsonville, Pasadena.
+ * Shady Side, Davidsonville.
  *
  * (Eastport, West Annapolis, Hillsmere Shores, Cape St. Claire, Mayo,
- * Crofton, and Millersville were removed as standalone pages at the user's
- * request; Eastport and West Annapolis remain as named neighborhoods within
- * Annapolis's own page copy, and Cape St. Claire remains a named
- * neighborhood within Broadneck's.)
+ * Crofton, Millersville, and Pasadena were removed as standalone pages at
+ * the user's request; Eastport and West Annapolis remain as named
+ * neighborhoods within Annapolis's own page copy, and Cape St. Claire
+ * remains a named neighborhood within Broadneck's.)
  *
  * Demo properties in lib/data/properties.ts reference several of these
  * slugs (e.g. "edgewater", "broadneck") via `communitySlug` — those
@@ -273,38 +273,6 @@ const communities: Community[] = [
       title: "Davidsonville MD Real Estate | Homes for Sale",
       description:
         "Find homes for sale in Davidsonville, MD — large-lot, semi-rural living between Annapolis and Washington, D.C.",
-    },
-  },
-  {
-    slug: "pasadena",
-    name: "Pasadena",
-    heroImage: {
-      src: "/images/communities/pasadena-hero.jpg",
-      alt: "Fall foliage framing a calm waterfront view with a home across the water in Pasadena",
-    },
-    tagline: "A sprawling waterfront-and-suburban community along the Baltimore-Annapolis corridor.",
-    description:
-      "Pasadena stretches along the Patapsco Neck and Magothy River area between Annapolis and Baltimore, encompassing a wide range of neighborhoods — from dense mid-century subdivisions along Ritchie Highway to waterfront communities on the Magothy and Chesapeake Bay. Its size and variety mean housing stock and price points differ significantly by specific pocket.",
-    lifestyle:
-      "Pasadena is more suburban and commercially built-out than the smaller Anne Arundel communities to its south, with easy access to shopping and everyday amenities along Ritchie Highway, balanced by pockets of genuine waterfront neighborhoods tucked along the peninsulas and coves that define its shoreline.",
-    waterfront:
-      "Several Pasadena neighborhoods — including areas along the Magothy River, Stony Creek, and the Chesapeake Bay — offer direct waterfront or community water access, with marinas and private docks common in the older waterfront enclaves.",
-    schools: "Served by Anne Arundel County Public Schools; given Pasadena's size, school assignments vary considerably by neighborhood and should be confirmed by address.",
-    commute:
-      "About 20–25 minutes to Annapolis, 20–25 minutes to Baltimore via MD-2/I-695, and roughly 45 minutes to BWI Airport and Washington, D.C.",
-    neighborhoods: ["Riviera Beach", "Lake Shore", "Chesapeake Terrace", "Stoney Creek waterfront"],
-    localAttractions: [
-      "Downs Park",
-      "Magothy & Stoney Creek marinas",
-      "Ritchie Highway shopping corridor",
-      "Fort Smallwood Park (nearby)",
-    ],
-    relocationInfo:
-      "Pasadena's size makes it a broad umbrella rather than a single neighborhood, so relocating buyers benefit most from narrowing down to a specific pocket early. We help clients translate general Baltimore-Annapolis-corridor searches into the right Pasadena neighborhood for their budget and water-access priorities.",
-    seo: {
-      title: "Pasadena MD Real Estate | Homes for Sale",
-      description:
-        "Browse homes for sale in Pasadena, MD, along the Baltimore-Annapolis corridor — waterfront and suburban neighborhoods on the Magothy River and Chesapeake Bay.",
     },
   },
 ];
