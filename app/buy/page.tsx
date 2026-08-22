@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { CommunityCard } from "@/components/communities/CommunityCard";
+import { StaggerReveal } from "@/components/ui/StaggerReveal";
 import { getAllCommunities } from "@/lib/data/communities";
 
 export const metadata: Metadata = {
@@ -63,7 +64,7 @@ export default function BuyPage() {
 
   return (
     <>
-      <section className="bg-bay-teal py-24 text-shell">
+      <section className="bg-bay-teal py-14 md:py-16 text-shell">
         <Container className="max-w-3xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">For Buyers</p>
           <h1 className="text-display-lg font-display">Your Guide to Buying in Annapolis &amp; the Bay</h1>
@@ -84,7 +85,7 @@ export default function BuyPage() {
       <section className="py-24">
         <Container>
           <SectionHeading eyebrow="Why Buy With Krissy" title="Expertise You Can Rely On" align="center" className="mx-auto" />
-          <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerReveal className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {expertise.map((item) => (
               <div key={item.title}>
                 <item.icon className="h-7 w-7 text-bay-teal" aria-hidden="true" />
@@ -92,14 +93,14 @@ export default function BuyPage() {
                 <p className="mt-2 text-sm leading-relaxed text-ink/70">{item.body}</p>
               </div>
             ))}
-          </div>
+          </StaggerReveal>
         </Container>
       </section>
 
       <section className="bg-bg-alt py-24">
         <Container>
           <SectionHeading eyebrow="The Process" title="How We'll Find Your Home" align="center" className="mx-auto" />
-          <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerReveal className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, i) => (
               <div key={step.title}>
                 <div className="flex items-center gap-3">
@@ -112,7 +113,7 @@ export default function BuyPage() {
                 <p className="mt-2 text-sm leading-relaxed text-ink/70">{step.body}</p>
               </div>
             ))}
-          </div>
+          </StaggerReveal>
         </Container>
       </section>
 

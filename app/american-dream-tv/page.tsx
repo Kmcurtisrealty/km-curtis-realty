@@ -36,16 +36,12 @@ export default function AmericanDreamTVPage() {
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">More Episodes</p>
           <h2 className="text-display-sm font-display text-ink">The Full Episode Hub Is Coming Soon</h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-ink/70">
-            Full episodes, local business features, and community stories are on their way. In the
-            meantime, reach out to talk through buying, selling, or relocating to the Annapolis and
-            Chesapeake Bay region.
+            Full episodes, local business features, and community stories are on their way. Check
+            back soon as more episodes are filmed.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <Button href="/properties" variant="primary" size="lg">
               Search Homes
-            </Button>
-            <Button href="/contact" variant="secondary" size="lg">
-              Let&rsquo;s Connect
             </Button>
           </div>
         </Container>
