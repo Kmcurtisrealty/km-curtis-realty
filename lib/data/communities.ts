@@ -311,8 +311,8 @@ const communities: Community[] = [
     slug: "pasadena",
     name: "Pasadena",
     heroImage: {
-      src: "/images/communities/pasadena-hero.svg",
-      alt: "Suburban rooflines along the Baltimore-Annapolis corridor in Pasadena",
+      src: "/images/communities/pasadena-hero.jpg",
+      alt: "Fall foliage framing a calm waterfront view with a home across the water in Pasadena",
     },
     tagline: "A sprawling waterfront-and-suburban community along the Baltimore-Annapolis corridor.",
     description:
