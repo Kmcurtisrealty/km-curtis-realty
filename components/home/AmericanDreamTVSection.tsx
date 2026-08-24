@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 
 const thumbnails = [
   { src: "/images/communities/annapolis-hero.jpg", alt: "Episode preview: exploring downtown Annapolis" },
-  { src: "/images/communities/severna-park-hero.svg", alt: "Episode preview: life in Severna Park" },
+  { src: "/images/communities/severna-park-hero.jpg", alt: "Episode preview: life in Severna Park" },
   { src: "/images/properties/harbor-sunset-view.svg", alt: "Episode preview: Chesapeake Bay lifestyle" },
 ];
 

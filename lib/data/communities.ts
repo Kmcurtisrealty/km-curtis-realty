@@ -54,8 +54,8 @@ const communities: Community[] = [
     slug: "severna-park",
     name: "Severna Park",
     heroImage: {
-      src: "/images/communities/severna-park-hero.svg",
-      alt: "Marsh grass and tree-lined shoreline in Severna Park",
+      src: "/images/communities/severna-park-hero.jpg",
+      alt: "A marina full of boats on the water in Severna Park",
     },
     tagline: "Top-rated schools, protected coves, and an easy commute up Ritchie Highway.",
     description:
@@ -120,8 +120,8 @@ const communities: Community[] = [
     slug: "arnold",
     name: "Arnold",
     heroImage: {
-      src: "/images/communities/arnold-hero.svg",
-      alt: "Waterfront marina and shoreline along the Magothy River near Arnold",
+      src: "/images/communities/arnold-hero.jpg",
+      alt: "A waterfront home surrounded by trees along the water in Arnold",
     },
     tagline: "A Broadneck Peninsula community on the Severn and Magothy, home to Anne Arundel Community College.",
     description:
@@ -184,8 +184,8 @@ const communities: Community[] = [
     slug: "galesville",
     name: "Galesville",
     heroImage: {
-      src: "/images/communities/galesville-hero.svg",
-      alt: "Working waterman's harbor and dock along the West River at Galesville",
+      src: "/images/communities/galesville-hero.jpg",
+      alt: "Galesville's waterfront park with a flagpole and marina in the background",
     },
     tagline: "A historic working-waterman's village on the West River.",
     description:
