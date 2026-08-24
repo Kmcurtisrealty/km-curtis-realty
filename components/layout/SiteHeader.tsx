@@ -15,6 +15,7 @@ export function SiteHeader() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
+    <>
     <header className="sticky top-0 z-40 border-b border-mist/70 bg-shell/95 backdrop-blur">
       <Container className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3" aria-label="KM Curtis Realty home">
@@ -77,8 +78,8 @@ export function SiteHeader() {
           <Menu className="h-6 w-6" />
         </button>
       </Container>
-
-      <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />
     </header>
+    <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />
+    </>
   );
 }
