@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { CommunityCard } from "@/components/communities/CommunityCard";
 
 export function ExploreCommunitiesSection() {
-  const communities = getAllCommunities();
+  const communities = getAllCommunities().slice(0, 4);
 
   return (
     <section className="bg-ink py-24 text-shell">
@@ -21,11 +21,11 @@ export function ExploreCommunitiesSection() {
               </span>
             }
           />
-          <Button href="/communities/annapolis" variant="secondary" className="shrink-0 border-shell/40 text-shell hover:bg-shell/10">
+          <Button href="/buy" variant="secondary" className="shrink-0 border-shell/40 text-shell hover:bg-shell/10">
             View All Communities
           </Button>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {communities.map((community) => (
             <CommunityCard key={community.slug} community={community} />
           ))}
