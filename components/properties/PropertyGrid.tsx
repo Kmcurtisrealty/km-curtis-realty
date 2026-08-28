@@ -1,5 +1,6 @@
 import type { Property } from "@/lib/types/property";
 import { PropertyCard } from "@/components/properties/PropertyCard";
+import { StaggerReveal } from "@/components/ui/StaggerReveal";
 
 interface PropertyGridProps {
   properties: Property[];
@@ -22,10 +23,10 @@ export function PropertyGrid({
   }
 
   return (
-    <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+    <StaggerReveal className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
       {properties.map((property, index) => (
         <PropertyCard key={property.id} property={property} priority={index < priorityCount} />
       ))}
-    </div>
+    </StaggerReveal>
   );
 }
