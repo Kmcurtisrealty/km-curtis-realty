@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  /* Color palette — saturated coastal teal + warm gold accent. Bolder and
-     more vivid than the earlier muted pastel system; token names are kept
-     stable so every component that references them (rather than hardcoded
-     hex) picks up the new look automatically. */
-  --color-ink: #1e2a33; /* rich charcoal-navy text */
-  --color-shell: #fcfbf8; /* warm off-white background */
-  --color-bay-teal: #0d7a93; /* saturated deep teal — primary accent/CTA */
-  --color-bay-teal-dark: #0a5d70; /* deeper hover state for the primary accent */
-  --color-marsh: #2e7d62; /* saturated sage-teal — secondary accent/labels */
-  --color-clay: #e08a3c; /* saturated warm gold-orange — high-priority CTA pop */
-  --color-mist: #d8e4e1; /* soft teal-tinted grey — borders/dividers */
-  --color-dusty-blue: #3fa8c4; /* brighter saturated blue — hover/secondary accent */
-  --color-bg-alt: #e8f3f1; /* pale teal-tinted — section/card backgrounds */
+  /* Color palette — coastal nautical: sandy whites, navy, seafoam green, and
+     a driftwood-coral accent. Token names are kept stable so every
+     component that references them (rather than hardcoded hex) picks up
+     the new look automatically. */
+  --color-ink: #1b2e3d; /* nautical navy-charcoal text */
+  --color-shell: #fbf8f2; /* warm sandy-white background */
+  --color-bay-teal: #0f6e8c; /* ocean teal-blue — primary accent/CTA */
+  --color-bay-teal-dark: #0b5470; /* deeper hover state for the primary accent */
+  --color-marsh: #4f9b82; /* seafoam green — secondary accent/labels */
+  --color-clay: #d97f4a; /* driftwood coral — high-priority CTA pop */
+  --color-mist: #e3ddd0; /* sandy grey — borders/dividers */
+  --color-dusty-blue: #6fc1cb; /* bright seafoam/aqua — hover/secondary accent */
+  --color-bg-alt: #eaf4f2; /* pale seafoam — section/card backgrounds */
   --color-error: #c23b2b; /* saturated red — reserved for form validation only, kept out of the CTA palette so it still reads as "attention" */
 
   /* Softened corner radii + shadows for the "less industrial" pass. */

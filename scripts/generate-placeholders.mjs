@@ -16,27 +16,27 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 // ---------------------------------------------------------------------------
-// Palette — saturated coastal teal + warm gold accent (color refresh)
+// Palette — coastal nautical: sandy whites, navy, seafoam, driftwood coral
 // ---------------------------------------------------------------------------
 const PALETTE = {
-  bg: "#FCFBF8",
-  bgAlt: "#E8F3F1",
+  bg: "#FBF8F2",
+  bgAlt: "#EAF4F2",
   white: "#FFFFFF",
-  text: "#1E2A33",
-  muted: "#2E7D62",
-  accent: "#0D7A93",
-  accentHover: "#3FA8C4",
-  border: "#D8E4E1",
+  text: "#1B2E3D",
+  muted: "#4F9B82",
+  accent: "#0F6E8C",
+  accentHover: "#6FC1CB",
+  border: "#E3DDD0",
 };
 
-// Background gradient pairs (top -> bottom), richer saturated teal/aqua tones.
+// Background gradient pairs (top -> bottom), seafoam/aqua fading to sandy white.
 const GRADIENTS = [
-  ["#A8D8E0", "#E8F3F1"],
-  ["#8FCBD9", "#F0F7F4"],
-  ["#B9E2E8", "#FCFBF8"],
-  ["#9ED4DE", "#E8F3F1"],
-  ["#A3D9E2", "#FFFFFF"],
-  ["#C2E6EA", "#FCFBF8"],
+  ["#9FD6DC", "#EAF4F2"],
+  ["#89C9CE", "#F3F6F0"],
+  ["#B0DEE0", "#FBF8F2"],
+  ["#94D2D6", "#EAF4F2"],
+  ["#9AD3D8", "#FFFFFF"],
+  ["#BEE4E3", "#FBF8F2"],
 ];
 
 // ---------------------------------------------------------------------------
