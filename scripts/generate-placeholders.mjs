@@ -16,25 +16,25 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 // ---------------------------------------------------------------------------
-// Palette — coastal nautical: sandy whites, navy, seafoam, driftwood coral
+// Palette — coastal, blues-and-sand only: no greens or golds
 // ---------------------------------------------------------------------------
 const PALETTE = {
   bg: "#FBF8F2",
-  bgAlt: "#EAF4F2",
+  bgAlt: "#E9F1F4",
   white: "#FFFFFF",
   text: "#1B2E3D",
-  muted: "#4F9B82",
+  muted: "#3C5A68",
   accent: "#0F6E8C",
   accentHover: "#6FC1CB",
   border: "#E3DDD0",
 };
 
-// Background gradient pairs (top -> bottom), seafoam/aqua fading to sandy white.
+// Background gradient pairs (top -> bottom), sky/aqua-blue fading to sandy white.
 const GRADIENTS = [
-  ["#9FD6DC", "#EAF4F2"],
+  ["#9FD6DC", "#E9F1F4"],
   ["#89C9CE", "#F3F6F0"],
   ["#B0DEE0", "#FBF8F2"],
-  ["#94D2D6", "#EAF4F2"],
+  ["#94D2D6", "#E9F1F4"],
   ["#9AD3D8", "#FFFFFF"],
   ["#BEE4E3", "#FBF8F2"],
 ];
