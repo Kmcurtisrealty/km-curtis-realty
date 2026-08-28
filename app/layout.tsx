@@ -36,6 +36,21 @@ export const metadata: Metadata = {
     siteName: "Krissy Curtis Realty",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/communities/edgewater-hero.jpg",
+        width: 4000,
+        height: 2250,
+        alt: "Aerial view of the South River Bridge and waterfront homes at sunset",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Krissy Curtis Realty | Annapolis & Chesapeake Bay Real Estate",
+    description:
+      "Real estate, Maryland living, and your next chapter. Serving Annapolis and the Chesapeake Bay region.",
+    images: ["/images/communities/edgewater-hero.jpg"],
   },
 };
 
