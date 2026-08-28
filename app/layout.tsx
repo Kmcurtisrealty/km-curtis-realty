@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description:
     "Real estate, Maryland living, and your next chapter. Krissy Curtis helps buyers and sellers navigate Annapolis and the Chesapeake Bay region.",
   openGraph: {
-    title: "Krissy Curtis Realty | Annapolis & Chesapeake Bay Real Estate",
+    title: "Krissy Curtis Realty",
     description:
       "Real estate, Maryland living, and your next chapter. Serving Annapolis and the Chesapeake Bay region.",
     url: SITE_URL,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Krissy Curtis Realty | Annapolis & Chesapeake Bay Real Estate",
+    title: "Krissy Curtis Realty",
     description:
       "Real estate, Maryland living, and your next chapter. Serving Annapolis and the Chesapeake Bay region.",
     images: ["/images/communities/edgewater-hero.jpg"],
