@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  /* Color palette — soft blues, greys, and whites. Airier and calmer than the
-     original dark-teal/terracotta editorial system; token names are kept
+  /* Color palette — saturated coastal teal + warm gold accent. Bolder and
+     more vivid than the earlier muted pastel system; token names are kept
      stable so every component that references them (rather than hardcoded
      hex) picks up the new look automatically. */
-  --color-ink: #333a42; /* soft charcoal-grey text, not pure black */
-  --color-shell: #fafbfc; /* soft off-white background */
-  --color-bay-teal: #6c90b0; /* dusty muted blue — primary accent/CTA */
-  --color-bay-teal-dark: #5a7c9a; /* deeper hover state for the primary accent */
-  --color-marsh: #6b7480; /* mid grey — muted/secondary text */
-  --color-clay: #a9c4d8; /* lighter powder blue — rare high-priority CTA pop */
-  --color-mist: #dee3e8; /* light grey — borders/dividers */
-  --color-dusty-blue: #a9c4d8; /* hover/secondary accent, powder blue */
-  --color-bg-alt: #eef1f4; /* pale grey — section/card backgrounds */
-  --color-error: #b3564b; /* muted rust — reserved for form validation only, kept out of the CTA palette so it still reads as "attention" */
+  --color-ink: #1e2a33; /* rich charcoal-navy text */
+  --color-shell: #fcfbf8; /* warm off-white background */
+  --color-bay-teal: #0d7a93; /* saturated deep teal — primary accent/CTA */
+  --color-bay-teal-dark: #0a5d70; /* deeper hover state for the primary accent */
+  --color-marsh: #2e7d62; /* saturated sage-teal — secondary accent/labels */
+  --color-clay: #e08a3c; /* saturated warm gold-orange — high-priority CTA pop */
+  --color-mist: #d8e4e1; /* soft teal-tinted grey — borders/dividers */
+  --color-dusty-blue: #3fa8c4; /* brighter saturated blue — hover/secondary accent */
+  --color-bg-alt: #e8f3f1; /* pale teal-tinted — section/card backgrounds */
+  --color-error: #c23b2b; /* saturated red — reserved for form validation only, kept out of the CTA palette so it still reads as "attention" */
 
   /* Softened corner radii + shadows for the "less industrial" pass. */
   --radius-card: 1.25rem;

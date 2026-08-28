@@ -16,27 +16,27 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
 // ---------------------------------------------------------------------------
-// Palette — soft blues, greys, whites (Phase 2 redesign)
+// Palette — saturated coastal teal + warm gold accent (color refresh)
 // ---------------------------------------------------------------------------
 const PALETTE = {
-  bg: "#FAFBFC",
-  bgAlt: "#EEF1F4",
+  bg: "#FCFBF8",
+  bgAlt: "#E8F3F1",
   white: "#FFFFFF",
-  text: "#333A42",
-  muted: "#6B7480",
-  accent: "#6C90B0",
-  accentHover: "#A9C4D8",
-  border: "#DEE3E8",
+  text: "#1E2A33",
+  muted: "#2E7D62",
+  accent: "#0D7A93",
+  accentHover: "#3FA8C4",
+  border: "#D8E4E1",
 };
 
-// Background gradient pairs (top -> bottom), all within the soft blue/grey/white family.
+// Background gradient pairs (top -> bottom), richer saturated teal/aqua tones.
 const GRADIENTS = [
-  ["#DCEAF5", "#EEF1F4"],
-  ["#CFE0EC", "#F5F7F9"],
-  ["#E4EAF0", "#FAFBFC"],
-  ["#D2E1EC", "#EEF1F4"],
-  ["#D8E4ED", "#FFFFFF"],
-  ["#E8EDF1", "#FAFBFC"],
+  ["#A8D8E0", "#E8F3F1"],
+  ["#8FCBD9", "#F0F7F4"],
+  ["#B9E2E8", "#FCFBF8"],
+  ["#9ED4DE", "#E8F3F1"],
+  ["#A3D9E2", "#FFFFFF"],
+  ["#C2E6EA", "#FCFBF8"],
 ];
 
 // ---------------------------------------------------------------------------
