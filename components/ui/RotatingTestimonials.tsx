@@ -53,31 +53,36 @@ export function RotatingTestimonials({ testimonials, intervalMs = 6000, variant 
           const d = delta(i);
           const abs = Math.abs(d);
           if (abs > VISIBLE_RANGE) return null;
+          const isFront = d === 0;
           const translateXPct = d * 22;
           const translateY = abs * 16;
           const scale = 1 - abs * 0.14;
           const rotate = d * 5;
-          const opacity = d === 0 ? 1 : Math.max(0, 0.32 - abs * 0.1);
+          const opacity = isFront ? 1 : Math.max(0, 0.32 - abs * 0.1);
 
           return (
             <div
               key={t.id}
-              aria-hidden={d !== 0}
+              aria-hidden={!isFront}
               className={cn(
-                "absolute inset-x-0 top-1/2 rounded-card border p-8 transition-all duration-700 ease-out md:p-10",
-                isDark ? "border-shell/15 bg-shell/5" : "border-mist bg-bg-alt",
+                "absolute inset-x-0 top-1/2 rounded-card border p-8 shadow-soft-lg transition-all duration-700 ease-out md:p-10",
+                isDark
+                  ? isFront
+                    ? "border-shell/20 bg-shell"
+                    : "border-shell/15 bg-shell/5"
+                  : "border-mist bg-bg-alt",
               )}
               style={{
                 transform: `translate(${translateXPct}%, calc(-50% + ${translateY}px)) scale(${scale}) rotate(${rotate}deg)`,
                 opacity,
                 zIndex: 10 - abs,
-                pointerEvents: d === 0 ? "auto" : "none",
+                pointerEvents: isFront ? "auto" : "none",
               }}
             >
               <blockquote
                 className={cn(
                   "line-clamp-6 font-display text-xl leading-snug md:text-2xl",
-                  isDark ? "text-shell/95" : "text-ink",
+                  isDark ? (isFront ? "text-ink" : "text-shell/95") : "text-ink",
                 )}
               >
                 &ldquo;{t.quote}&rdquo;
@@ -85,11 +90,16 @@ export function RotatingTestimonials({ testimonials, intervalMs = 6000, variant 
               <figcaption
                 className={cn(
                   "mt-6 text-xs font-medium uppercase tracking-[0.12em]",
-                  isDark ? "text-shell/60" : "text-marsh",
+                  isDark ? (isFront ? "text-marsh" : "text-shell/60") : "text-marsh",
                 )}
               >
                 {t.name} &middot; {t.location}
-                <span className={cn("block normal-case tracking-normal", isDark ? "text-shell/40" : "text-ink/40")}>
+                <span
+                  className={cn(
+                    "block normal-case tracking-normal",
+                    isDark ? (isFront ? "text-ink/40" : "text-shell/40") : "text-ink/40",
+                  )}
+                >
                   via {t.source}
                 </span>
               </figcaption>
