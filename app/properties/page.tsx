@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PropertyGrid } from "@/components/properties/PropertyGrid";
 import { PropertyExplorer } from "@/components/properties/PropertyExplorer";
+import { RotatingPropertySales } from "@/components/properties/RotatingPropertySales";
 
 export const metadata: Metadata = {
   title: "Properties",
@@ -63,7 +64,7 @@ export default function PropertiesPage() {
         <Container>
           <SectionHeading eyebrow="Track Record" title="Past Transactions" supporting="A selection of recently closed sales representing our work in the market." />
           <div className="mt-12">
-            <PropertyGrid properties={recentSales} />
+            <RotatingPropertySales properties={recentSales} />
           </div>
         </Container>
       </section>

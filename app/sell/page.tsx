@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { StaggerReveal } from "@/components/ui/StaggerReveal";
-import { PropertyGrid } from "@/components/properties/PropertyGrid";
+import { RotatingPropertySales } from "@/components/properties/RotatingPropertySales";
 import { getRecentSales } from "@/lib/data/properties";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ const points = [
 ];
 
 export default function SellPage() {
-  const recentSales = getRecentSales(6);
+  const recentSales = getRecentSales();
 
   return (
     <>
@@ -78,7 +78,7 @@ export default function SellPage() {
         <Container>
           <SectionHeading eyebrow="Track Record" title="Recent Sales" align="center" className="mx-auto" />
           <div className="mt-14">
-            <PropertyGrid properties={recentSales} />
+            <RotatingPropertySales properties={recentSales} />
           </div>
         </Container>
       </section>
