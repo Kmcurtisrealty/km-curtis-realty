@@ -4,7 +4,6 @@ import type { Property } from "@/lib/types/property";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { PropertyExplorer } from "@/components/properties/PropertyExplorer";
 import { PropertyGrid } from "@/components/properties/PropertyGrid";
 
 interface CommunityOverviewProps {
@@ -18,7 +17,6 @@ interface CommunityOverviewProps {
  * lib/data/communities.ts against this component — no new page code.
  */
 export function CommunityOverview({ community, properties }: CommunityOverviewProps) {
-  const forSale = properties.filter((p) => p.status !== "sold");
   const recentSales = properties.filter((p) => p.status === "sold");
 
   return (
@@ -88,19 +86,6 @@ export function CommunityOverview({ community, properties }: CommunityOverviewPr
         </aside>
       </Container>
 
-      <section className="border-t border-mist bg-shell py-20">
-        <Container>
-          <SectionHeading
-            eyebrow="Property Search"
-            title={`Homes for Sale in ${community.name}`}
-            supporting={`Every current listing tied to ${community.name} in our system, searchable and filterable right here.`}
-          />
-          <div className="mt-10">
-            <PropertyExplorer properties={forSale} />
-          </div>
-        </Container>
-      </section>
-
       {recentSales.length > 0 ? (
         <section className="border-t border-mist bg-mist/20 py-20">
           <Container>
@@ -124,7 +109,7 @@ export function CommunityOverview({ community, properties }: CommunityOverviewPr
               Let&rsquo;s Connect
             </Button>
             <Button href="/properties" variant="secondary" size="lg" className="border-shell/40 text-shell hover:bg-shell/10">
-              Search All Properties
+              View Recent Sales
             </Button>
           </div>
         </Container>

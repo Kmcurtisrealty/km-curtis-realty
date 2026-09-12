@@ -11,10 +11,7 @@ export function FinalCTASection() {
           region, the conversation starts here.
         </p>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-          <Button href="/properties" variant="primary" size="lg">
-            Search Homes
-          </Button>
-          <Button href="/contact" variant="secondary" size="lg" className="border-ink/30 text-ink hover:bg-ink/5">
+          <Button href="/contact" variant="primary" size="lg">
             Let&rsquo;s Connect
           </Button>
         </div>

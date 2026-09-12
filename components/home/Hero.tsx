@@ -26,10 +26,7 @@ export function Hero() {
           and the Chesapeake Bay region.
         </p>
         <div className="mt-9 flex flex-wrap items-center gap-4">
-          <Button href="/properties" variant="primary" size="lg">
-            Search Homes
-          </Button>
-          <Button href="/contact" variant="secondary" size="lg" className="border-shell/40 text-shell hover:bg-shell/10">
+          <Button href="/contact" variant="primary" size="lg">
             Let&rsquo;s Connect
           </Button>
         </div>

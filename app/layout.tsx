@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
-import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { MobileStickyCTA } from "@/components/layout/MobileStickyCTA";
@@ -58,12 +57,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
       <body className="flex min-h-screen flex-col bg-shell font-body text-ink pb-16 md:pb-0">
-        <NuqsAdapter>
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
-          <MobileStickyCTA />
-        </NuqsAdapter>
+        <SiteHeader />
+        <main className="flex-1">{children}</main>
+        <SiteFooter />
+        <MobileStickyCTA />
       </body>
     </html>
   );

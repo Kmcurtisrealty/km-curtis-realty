@@ -41,7 +41,7 @@ export default function AmericanDreamTVPage() {
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <Button href="/properties" variant="primary" size="lg">
-              Search Homes
+              View Recent Sales
             </Button>
           </div>
         </Container>

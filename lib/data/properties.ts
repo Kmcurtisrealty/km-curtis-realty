@@ -641,11 +641,6 @@ export function getAllPropertySlugs(): string[] {
   return properties.map((p) => p.slug);
 }
 
-export function getFeaturedProperties(limit?: number): Property[] {
-  const featured = properties.filter((p) => p.featured);
-  return typeof limit === "number" ? featured.slice(0, limit) : featured;
-}
-
 export function getWaterfrontProperties(limit?: number): Property[] {
   const waterfront = properties.filter((p) => p.waterfront && p.status !== "sold");
   return typeof limit === "number" ? waterfront.slice(0, limit) : waterfront;
@@ -658,9 +653,6 @@ export function getRecentSales(limit?: number): Property[] {
   return typeof limit === "number" ? sold.slice(0, limit) : sold;
 }
 
-export function getActiveProperties(): Property[] {
-  return properties.filter((p) => p.status !== "sold");
-}
 
 export function getPropertiesByCommunity(communitySlug: string): Property[] {
   return properties.filter((p) => p.communitySlug === communitySlug);

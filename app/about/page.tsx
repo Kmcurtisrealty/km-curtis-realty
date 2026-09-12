@@ -59,7 +59,7 @@ export default function AboutPage() {
                 Let&rsquo;s Connect
               </Button>
               <Button href="/properties" variant="secondary" size="lg">
-                Search Homes
+                View Recent Sales
               </Button>
             </div>
           </div>

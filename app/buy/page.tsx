@@ -75,8 +75,8 @@ export default function BuyPage() {
             closing day.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/properties" variant="clay" size="lg">
-              Search Homes
+            <Button href="/contact" variant="clay" size="lg">
+              Let&rsquo;s Connect
             </Button>
           </div>
         </Container>
@@ -145,8 +145,8 @@ export default function BuyPage() {
             right community.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/properties" variant="clay" size="lg">
-              Search Homes
+            <Button href="/contact" variant="clay" size="lg">
+              Let&rsquo;s Connect
             </Button>
           </div>
         </Container>

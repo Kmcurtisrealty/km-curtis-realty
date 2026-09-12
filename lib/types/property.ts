@@ -27,10 +27,8 @@ export type PropertyType =
   | "other";
 
 /**
- * Extensible tag list. New filterable amenities (pool, dock, new
- * construction, luxury, open house, etc.) are added here — and to
- * FILTER_DEFINITIONS in lib/utils/filterProperties.ts — without new
- * component code.
+ * Extensible tag list. New amenities (pool, dock, new construction,
+ * luxury, open house, etc.) are added here without new component code.
  */
 export type PropertyTag =
   | "waterfront"
