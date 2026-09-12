@@ -6,8 +6,8 @@ export function Hero() {
   return (
     <section className="relative flex h-[88vh] min-h-[560px] items-end overflow-hidden bg-ink">
       <Image
-        src="/images/brand/hero-sunset-sailboat.jpg"
-        alt="Sailboat silhouetted against a sunset over the water"
+        src="/images/brand/hero-kitchen.jpg"
+        alt="Bright, updated kitchen with a marble island"
         fill
         priority
         sizes="100vw"
