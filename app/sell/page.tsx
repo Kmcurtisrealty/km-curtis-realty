@@ -53,13 +53,18 @@ export default function SellPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
         <Container className="relative text-center text-shell">
-          <h1 className="mx-auto max-w-3xl text-display-lg font-display">Sell With an Expert Who Gets Results</h1>
+          <h1 className="mx-auto max-w-5xl text-display-lg font-display text-clay md:whitespace-nowrap">Sell With an Expert Who Gets Results</h1>
         </Container>
       </section>
 
       <section className="py-24">
         <Container>
-          <SectionHeading eyebrow="Why Sell With Krissy" title="Marketing, Negotiation, and National Reach" align="center" className="mx-auto" />
+          <SectionHeading
+            eyebrow="Why Sell With Krissy"
+            title={<span className="text-clay">Marketing, Negotiation, and National Reach</span>}
+            align="center"
+            className="mx-auto max-w-4xl md:whitespace-nowrap"
+          />
           <StaggerReveal className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {points.map((point) => (
               <div key={point.title}>
