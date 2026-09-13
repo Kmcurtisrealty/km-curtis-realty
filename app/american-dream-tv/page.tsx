@@ -57,8 +57,8 @@ export default function AmericanDreamTVPage() {
             back soon as more episodes are filmed.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/properties" variant="primary" size="lg">
-              View Recent Sales
+            <Button href="https://www.youtube.com/@KrissyCurtis" variant="primary" size="lg">
+              Watch All Videos on YouTube
             </Button>
           </div>
         </Container>
