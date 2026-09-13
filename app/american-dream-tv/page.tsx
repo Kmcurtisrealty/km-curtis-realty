@@ -27,14 +27,23 @@ export default function AmericanDreamTVPage() {
 
       <section className="bg-shell py-20">
         <Container className="max-w-4xl">
-          <YouTubeEmbed videoId="B1ExEUSZ-QY" title="American Dream TV — Krissy Curtis Intro Promo" />
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">Latest Episode</p>
+          <h2 className="mb-6 font-display text-2xl text-ink">Annapolis Sails</h2>
+          <YouTubeEmbed videoId="cSpMDEqz_H4" title="American Dream TV — Annapolis Sails" />
         </Container>
       </section>
 
       <section className="bg-bg-alt py-20">
+        <Container className="max-w-4xl">
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">Intro</p>
+          <YouTubeEmbed videoId="B1ExEUSZ-QY" title="American Dream TV — Krissy Curtis Intro Promo" />
+        </Container>
+      </section>
+
+      <section className="py-20">
         <Container className="max-w-2xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">More Episodes</p>
-          <h2 className="text-display-sm font-display text-ink">The Full Episode Hub Is Coming Soon</h2>
+          <h2 className="text-display-sm font-display text-ink">More Episodes Are on the Way</h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-ink/70">
             Full episodes, local business features, and community stories are on their way. Check
             back soon as more episodes are filmed.
