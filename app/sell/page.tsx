@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Megaphone, Handshake, Tv, TrendingUp } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -43,18 +44,16 @@ export default function SellPage() {
     <>
       <section className="bg-bay-teal py-14 text-shell md:py-16">
         <Container className="max-w-3xl text-center">
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">For Sellers</p>
           <h1 className="text-display-lg font-display">Sell With an Expert Who Gets Results</h1>
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
-            Krissy is an expert in marketing, pricing, and negotiating your home with ease —
-            bringing steady, experienced guidance to every step of your sale. Selected homes are
-            even featured on American Dream TV, a nationally broadcast series, giving your home
-            exposure most sellers never get.
-          </p>
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/contact" variant="clay" size="lg">
-              Let&rsquo;s Connect
-            </Button>
+          <div className="relative mx-auto mt-10 aspect-[16/9] w-full max-w-4xl overflow-hidden rounded-card shadow-soft">
+            <Image
+              src="/images/brand/sell-outdoor-living.jpg"
+              alt="Staged outdoor living space with lounge seating"
+              fill
+              priority
+              sizes="(min-width: 1024px) 896px, 100vw"
+              className="object-cover"
+            />
           </div>
         </Container>
       </section>
