@@ -1,14 +1,10 @@
 import Image from "next/image";
 import type { Community } from "@/lib/types/community";
-import type { Property } from "@/lib/types/property";
 import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { PropertyGrid } from "@/components/properties/PropertyGrid";
 
 interface CommunityOverviewProps {
   community: Community;
-  properties: Property[];
 }
 
 /**
@@ -16,9 +12,7 @@ interface CommunityOverviewProps {
  * /§19): adding a new community later is pure data entry in
  * lib/data/communities.ts against this component — no new page code.
  */
-export function CommunityOverview({ community, properties }: CommunityOverviewProps) {
-  const recentSales = properties.filter((p) => p.status === "sold");
-
+export function CommunityOverview({ community }: CommunityOverviewProps) {
   return (
     <div>
       <section className="relative flex h-[60vh] min-h-[420px] items-end">
@@ -85,17 +79,6 @@ export function CommunityOverview({ community, properties }: CommunityOverviewPr
           </div>
         </aside>
       </Container>
-
-      {recentSales.length > 0 ? (
-        <section className="border-t border-mist bg-mist/20 py-20">
-          <Container>
-            <SectionHeading eyebrow="Track Record" title={`Recent Sales in ${community.name}`} />
-            <div className="mt-10">
-              <PropertyGrid properties={recentSales} />
-            </div>
-          </Container>
-        </section>
-      ) : null}
 
       <section className="bg-bay-teal py-20 text-shell">
         <Container className="text-center">

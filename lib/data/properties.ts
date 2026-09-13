@@ -652,8 +652,3 @@ export function getRecentSales(limit?: number): Property[] {
     .sort((a, b) => (b.soldAt ?? "").localeCompare(a.soldAt ?? ""));
   return typeof limit === "number" ? sold.slice(0, limit) : sold;
 }
-
-
-export function getPropertiesByCommunity(communitySlug: string): Property[] {
-  return properties.filter((p) => p.communitySlug === communitySlug);
-}

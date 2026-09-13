@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllCommunitySlugs, getCommunityBySlug } from "@/lib/data/communities";
-import { getPropertiesByCommunity } from "@/lib/data/properties";
 import { CommunityOverview } from "@/components/communities/CommunityOverview";
 
 interface CommunityPageProps {
@@ -28,9 +27,5 @@ export default async function CommunityPage({ params }: CommunityPageProps) {
   const community = getCommunityBySlug(slug);
   if (!community) notFound();
 
-  // Scoped strictly to this community — properties assigned to other
-  // communities (built or not-yet-built) never leak in here.
-  const properties = getPropertiesByCommunity(community.slug);
-
-  return <CommunityOverview community={community} properties={properties} />;
+  return <CommunityOverview community={community} />;
 }
