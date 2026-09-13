@@ -16,7 +16,7 @@ export default function PropertiesPage() {
 
   return (
     <div>
-      <section className="bg-bay-teal py-24 text-shell">
+      <section className="bg-ink py-24 text-shell">
         <Container className="max-w-3xl text-center">
           <h1 className="text-display-lg font-display">Find Your Place in Maryland</h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">

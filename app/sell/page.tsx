@@ -42,7 +42,7 @@ export default function SellPage() {
 
   return (
     <>
-      <section className="bg-bay-teal py-14 text-shell md:py-16">
+      <section className="bg-ink py-14 text-shell md:py-16">
         <Container className="max-w-3xl text-center">
           <h1 className="text-display-lg font-display">Sell With an Expert Who Gets Results</h1>
           <div className="relative mx-auto mt-10 aspect-[16/9] w-full max-w-4xl overflow-hidden rounded-card shadow-soft">

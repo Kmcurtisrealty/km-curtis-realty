@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function AmericanDreamTVPage() {
   return (
     <>
-      <section className="bg-bay-teal py-24 text-shell">
+      <section className="bg-ink py-24 text-shell">
         <Container className="max-w-3xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">American Dream TV</p>
           <h1 className="text-display-lg font-display">
