@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { CommunityCard } from "@/components/communities/CommunityCard";
 import { StaggerReveal } from "@/components/ui/StaggerReveal";
+import { RelocationTeaserSection } from "@/components/home/RelocationTeaserSection";
 import { getAllCommunities } from "@/lib/data/communities";
 
 export const metadata: Metadata = {
@@ -136,6 +137,8 @@ export default function BuyPage() {
           </StaggerReveal>
         </Container>
       </section>
+
+      <RelocationTeaserSection />
 
       <section className="bg-bay-teal py-20 text-shell">
         <Container className="max-w-2xl text-center">
