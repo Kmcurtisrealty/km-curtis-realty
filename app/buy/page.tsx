@@ -66,21 +66,18 @@ export default function BuyPage() {
 
   return (
     <>
-      <section className="bg-bay-teal py-14 md:py-16 text-shell">
-        <Container className="max-w-3xl text-center">
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">For Buyers</p>
-          <h1 className="text-display-lg font-display">Your Guide to Buying in Annapolis &amp; the Bay</h1>
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
-            With more than 150 successful transactions and a lifetime of local roots, Krissy Curtis
-            brings expert guidance, skilled negotiation, and clear communication to every home
-            search — making the process feel seamless and stress-free from the first showing to
-            closing day.
-          </p>
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/contact" variant="clay" size="lg">
-              Let&rsquo;s Connect
-            </Button>
-          </div>
+      <section className="relative flex h-[60vh] min-h-[420px] items-center overflow-hidden bg-ink">
+        <Image
+          src="/images/brand/buy-living-room.jpg"
+          alt="Bright, open living room with plants and natural light"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
+        <Container className="relative text-center text-shell">
+          <h1 className="mx-auto max-w-3xl text-display-lg font-display">Your Guide to Buying in Annapolis &amp; the Bay</h1>
         </Container>
       </section>
 
@@ -96,15 +93,6 @@ export default function BuyPage() {
               </div>
             ))}
           </StaggerReveal>
-          <div className="relative mt-16 aspect-[16/9] w-full overflow-hidden rounded-card shadow-soft">
-            <Image
-              src="/images/brand/buy-living-room.jpg"
-              alt="Bright, open living room with plants and natural light"
-              fill
-              sizes="(min-width: 1024px) 1024px, 100vw"
-              className="object-cover"
-            />
-          </div>
         </Container>
       </section>
 
