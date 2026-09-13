@@ -24,7 +24,7 @@ export default function PropertiesPage() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-90"
+          className="object-cover object-[center_80%] opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
         <Container className="relative max-w-3xl text-center text-shell">

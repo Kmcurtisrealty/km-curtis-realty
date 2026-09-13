@@ -83,7 +83,12 @@ export default function BuyPage() {
 
       <section className="py-24">
         <Container>
-          <SectionHeading eyebrow="Why Buy With Krissy" title="Expertise You Can Rely On" align="center" className="mx-auto" />
+          <SectionHeading
+            eyebrow="Why Buy With Krissy"
+            title={<span className="text-clay">Expertise You Can Rely On</span>}
+            align="center"
+            className="mx-auto max-w-4xl md:whitespace-nowrap"
+          />
           <StaggerReveal className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {expertise.map((item) => (
               <div key={item.title}>
