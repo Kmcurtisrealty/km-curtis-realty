@@ -14,14 +14,14 @@ export function Hero() {
         className="object-cover opacity-90"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
-      <Container className="relative pb-20 text-shell">
+      <Container className="relative pb-20 text-center text-shell">
         <p className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-shell/70">
           Krissy Curtis Realty &middot; Annapolis &amp; the Chesapeake Bay
         </p>
         <h1 className="w-full text-display-xl font-display leading-[1.05] text-clay">
           Designing Tomorrow Together
         </h1>
-        <div className="mt-9 flex flex-wrap items-center gap-4">
+        <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
           <Button href="/contact" variant="primary" size="lg">
             Let&rsquo;s Connect
           </Button>
