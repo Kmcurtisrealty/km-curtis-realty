@@ -18,13 +18,9 @@ export function Hero() {
         <p className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-shell/70">
           Krissy Curtis Realty &middot; Annapolis &amp; the Chesapeake Bay
         </p>
-        <h1 className="max-w-3xl text-display-xl font-display leading-[1.05]">
-          Maryland Living. Your Next Chapter.
+        <h1 className="max-w-3xl text-display-xl font-display leading-[1.05] text-clay">
+          Designing Tomorrow Together
         </h1>
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-shell/85 md:text-lg">
-          Explore homes, waterfront properties, and distinctive communities throughout Annapolis
-          and the Chesapeake Bay region.
-        </p>
         <div className="mt-9 flex flex-wrap items-center gap-4">
           <Button href="/contact" variant="primary" size="lg">
             Let&rsquo;s Connect
