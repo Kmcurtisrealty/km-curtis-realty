@@ -42,19 +42,18 @@ export default function SellPage() {
 
   return (
     <>
-      <section className="bg-ink py-14 text-shell md:py-16">
-        <Container className="max-w-3xl text-center">
-          <h1 className="text-display-lg font-display">Sell With an Expert Who Gets Results</h1>
-          <div className="relative mx-auto mt-10 aspect-[16/9] w-full max-w-4xl overflow-hidden rounded-card shadow-soft">
-            <Image
-              src="/images/brand/sell-outdoor-living.jpg"
-              alt="Staged outdoor living space with lounge seating"
-              fill
-              priority
-              sizes="(min-width: 1024px) 896px, 100vw"
-              className="object-cover"
-            />
-          </div>
+      <section className="relative flex h-[60vh] min-h-[420px] items-center overflow-hidden bg-ink">
+        <Image
+          src="/images/brand/sell-outdoor-living.jpg"
+          alt="Staged outdoor living space with lounge seating"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
+        <Container className="relative text-center text-shell">
+          <h1 className="mx-auto max-w-3xl text-display-lg font-display">Sell With an Expert Who Gets Results</h1>
         </Container>
       </section>
 
