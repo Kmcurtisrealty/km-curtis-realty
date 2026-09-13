@@ -77,7 +77,7 @@ export default function BuyPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
         <Container className="relative text-center text-shell">
-          <h1 className="mx-auto max-w-3xl text-display-lg font-display">Your Guide to Buying in Annapolis &amp; the Bay</h1>
+          <h1 className="mx-auto max-w-3xl text-display-lg font-display">Your Guide to Buying</h1>
         </Container>
       </section>
 

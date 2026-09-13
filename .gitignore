@@ -40,3 +40,4 @@ next-env.d.ts
 # private client records — never commit (contracts, disclosures, financial docs, PII)
 /Closed/
 /Financial Spreadsheet.xlsx
+/Brokerage Cut Total.xlsx
