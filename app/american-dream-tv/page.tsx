@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { YouTubeEmbed } from "@/components/ui/YouTubeEmbed";
@@ -11,12 +12,19 @@ export const metadata: Metadata = {
 export default function AmericanDreamTVPage() {
   return (
     <>
-      <section className="bg-ink py-24 text-shell">
-        <Container className="max-w-3xl text-center">
+      <section className="relative flex h-[60vh] min-h-[420px] items-center overflow-hidden bg-ink text-shell">
+        <Image
+          src="/images/brand/american-dream-logo.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-contain p-12 opacity-20"
+          aria-hidden="true"
+        />
+        <Container className="relative max-w-3xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">American Dream TV</p>
-          <h1 className="text-display-lg font-display">
-            Maryland Is More Than a Place to Live. <span className="block">It&rsquo;s a Lifestyle.</span>
-          </h1>
+          <h1 className="text-display-lg font-display text-clay">Maryland, Lifestyle, Culture &amp; Real Estate</h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
             Krissy Curtis hosts American Dream TV, a nationally broadcast lifestyle and real estate
             series, bringing that same platform home to cover Annapolis and Chesapeake Bay
