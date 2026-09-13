@@ -73,6 +73,12 @@
     letter-spacing: -0.01em;
   }
 
+  h1,
+  h2 {
+    -webkit-text-stroke: 1px var(--color-ink);
+    text-stroke: 1px var(--color-ink);
+  }
+
   ::selection {
     background-color: var(--color-bay-teal);
     color: var(--color-shell);

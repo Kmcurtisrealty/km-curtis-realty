@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getRecentSales } from "@/lib/data/properties";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -16,9 +17,18 @@ export default function PropertiesPage() {
 
   return (
     <div>
-      <section className="bg-ink py-24 text-shell">
-        <Container className="max-w-3xl text-center">
-          <h1 className="text-display-lg font-display">Find Your Place in Maryland</h1>
+      <section className="relative flex h-[60vh] min-h-[420px] items-center overflow-hidden bg-ink">
+        <Image
+          src="/images/brand/properties-hero.jpg"
+          alt="Marsh grass along the Chesapeake Bay with waterfront homes across the water"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
+        <Container className="relative max-w-3xl text-center text-shell">
+          <h1 className="text-display-lg font-display text-clay">Find Your Place in Maryland</h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
             Explore homes, waterfront properties, and distinctive communities throughout Annapolis
             and the Chesapeake Bay region.
