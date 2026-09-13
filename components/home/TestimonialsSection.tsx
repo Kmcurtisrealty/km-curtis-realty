@@ -8,7 +8,7 @@ export function TestimonialsSection() {
 
   return (
     <section className="bg-ink py-24 text-shell">
-      <Container className="max-w-3xl">
+      <Container className="max-w-xl">
         <SectionHeading
           eyebrow="Client Stories"
           title={<span className="text-shell">What Clients Say</span>}
