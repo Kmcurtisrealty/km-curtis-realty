@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Search, ClipboardCheck, Handshake, KeyRound, MapPinned, ShieldCheck, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -95,6 +96,15 @@ export default function BuyPage() {
               </div>
             ))}
           </StaggerReveal>
+          <div className="relative mt-16 aspect-[16/9] w-full overflow-hidden rounded-card shadow-soft">
+            <Image
+              src="/images/brand/buy-living-room.jpg"
+              alt="Bright, open living room with plants and natural light"
+              fill
+              sizes="(min-width: 1024px) 1024px, 100vw"
+              className="object-cover"
+            />
+          </div>
         </Container>
       </section>
 
