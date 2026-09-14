@@ -1079,6 +1079,6 @@ export function getWaterfrontProperties(limit?: number): Property[] {
 export function getRecentSales(limit?: number): Property[] {
   const sold = properties
     .filter((p) => p.status === "sold")
-    .sort((a, b) => (b.soldAt ?? "").localeCompare(a.soldAt ?? ""));
+    .sort((a, b) => (b.soldPrice ?? b.price) - (a.soldPrice ?? a.price));
   return typeof limit === "number" ? sold.slice(0, limit) : sold;
 }
