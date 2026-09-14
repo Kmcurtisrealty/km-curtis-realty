@@ -24,7 +24,7 @@ export default function AmericanDreamTVPage() {
         />
         <Container className="relative max-w-3xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">American Dream TV</p>
-          <h1 className="text-display-lg font-display text-clay">Maryland, Lifestyle, Culture &amp; Real Estate</h1>
+          <h1 className="text-display-lg font-display text-clay">Lifestyle, Culture &amp; Real Estate</h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
             Krissy Curtis hosts American Dream TV, a nationally broadcast lifestyle and real estate
             series, bringing that same platform home to cover Annapolis and Chesapeake Bay
