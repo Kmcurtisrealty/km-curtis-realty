@@ -53,7 +53,7 @@ export default function SellPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
         <Container className="relative text-center text-shell">
-          <h1 className="mx-auto max-w-5xl text-display-lg font-display text-clay md:whitespace-nowrap">Sell With an Expert Who Gets Results</h1>
+          <h1 className="mx-auto max-w-5xl text-display-lg font-display text-shell md:whitespace-nowrap">Sell With an Expert Who Gets Results</h1>
         </Container>
       </section>
 

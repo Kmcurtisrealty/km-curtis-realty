@@ -28,7 +28,7 @@ export default function PropertiesPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/10" />
         <Container className="relative max-w-3xl text-center text-shell">
-          <h1 className="text-display-lg font-display text-clay">Find Your Place in Maryland</h1>
+          <h1 className="text-display-lg font-display text-shell">Find Your Place in Maryland</h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
             Explore homes, waterfront properties, and distinctive communities throughout Annapolis
             and the Chesapeake Bay region.
