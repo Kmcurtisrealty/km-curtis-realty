@@ -24,7 +24,7 @@ export default function AmericanDreamTVPage() {
         />
         <Container className="relative max-w-3xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">American Dream TV</p>
-          <h1 className="text-display-lg font-display text-clay">Lifestyle, Culture &amp; Real Estate</h1>
+          <h1 className="text-display-lg font-display text-shell">Lifestyle, Culture &amp; Real Estate</h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
             Krissy Curtis hosts American Dream TV, a nationally broadcast lifestyle and real estate
             series, bringing that same platform home to cover Annapolis and Chesapeake Bay
@@ -38,6 +38,7 @@ export default function AmericanDreamTVPage() {
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">Latest Episode</p>
           <h2 className="mb-6 font-display text-2xl text-ink">Annapolis Sails</h2>
           <YouTubeEmbed videoId="cSpMDEqz_H4" title="American Dream TV — Annapolis Sails" />
+          <p className="mt-4 text-sm text-ink/60">Featuring SailTime Annapolis and Framed to Finish.</p>
         </Container>
       </section>
 
