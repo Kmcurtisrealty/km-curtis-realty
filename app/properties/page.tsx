@@ -43,7 +43,13 @@ export default function PropertiesPage() {
 
       <section className="py-24">
         <Container>
-          <SectionHeading eyebrow="Track Record" title="Past Transactions" supporting="A selection of recently closed sales representing our work in the market." />
+          <SectionHeading
+            eyebrow="Track Record"
+            title={<span className="text-clay">Past Transactions</span>}
+            supporting="A selection of recently closed sales representing our work in the market."
+            align="center"
+            className="mx-auto max-w-4xl md:whitespace-nowrap"
+          />
           <div className="mt-12">
             <RotatingPropertySales properties={recentSales} />
           </div>
