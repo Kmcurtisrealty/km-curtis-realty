@@ -88,7 +88,7 @@ export default function SellPage() {
 
       <section className="bg-bay-teal py-20 text-shell">
         <Container className="max-w-2xl text-center">
-          <h2 className="text-display-sm font-display">Ready to List Your Home?</h2>
+          <h2 className="text-display-sm font-display text-clay">Ready to List Your Home?</h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-shell/85">
             Let&rsquo;s talk through your home&rsquo;s value, timeline, and the marketing strategy
             that will get it sold.

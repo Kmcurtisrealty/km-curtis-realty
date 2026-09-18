@@ -145,7 +145,7 @@ export default function BuyPage() {
 
       <section className="bg-bay-teal py-20 text-shell">
         <Container className="max-w-2xl text-center">
-          <h2 className="text-display-sm font-display">Ready to Start Your Search?</h2>
+          <h2 className="text-display-sm font-display text-clay">Ready to Start Your Search?</h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-shell/85">
             Let&rsquo;s talk through what you&rsquo;re looking for and find the right home in the
             right community.

@@ -29,7 +29,12 @@ export function WhyKMCurtisSection() {
   return (
     <section className="py-24">
       <Container>
-        <SectionHeading eyebrow="Why Krissy Curtis Realty" title="Local Expertise, Genuinely Applied" align="center" className="mx-auto" />
+        <SectionHeading
+          eyebrow="Why Krissy Curtis Realty"
+          title={<span className="text-clay">Local Expertise, Genuinely Applied</span>}
+          align="center"
+          className="mx-auto max-w-4xl md:whitespace-nowrap"
+        />
         <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((pillar) => (
             <div key={pillar.title}>

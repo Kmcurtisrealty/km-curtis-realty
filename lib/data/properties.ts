@@ -1147,3 +1147,10 @@ export function getRecentSales(limit?: number): Property[] {
     .sort((a, b) => (b.soldPrice ?? b.price) - (a.soldPrice ?? a.price));
   return typeof limit === "number" ? sold.slice(0, limit) : sold;
 }
+
+export function getCurrentListings(limit?: number): Property[] {
+  const current = properties
+    .filter((p) => !p.isDemo && (p.status === "pending" || p.status === "coming-soon"))
+    .sort((a, b) => b.price - a.price);
+  return typeof limit === "number" ? current.slice(0, limit) : current;
+}

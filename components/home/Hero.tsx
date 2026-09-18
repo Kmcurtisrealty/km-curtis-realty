@@ -18,11 +18,11 @@ export function Hero() {
         <p className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-shell/70">
           Krissy Curtis Realty &middot; Annapolis &amp; the Chesapeake Bay
         </p>
-        <h1 className="w-full text-display-xl font-display leading-[1.05] text-clay">
+        <h1 className="w-full text-display-xl font-display leading-[1.05] text-shell">
           Designing Tomorrow Together
         </h1>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-          <Button href="/contact" variant="primary" size="lg">
+          <Button href="/contact" variant="clay" size="lg">
             Let&rsquo;s Connect
           </Button>
         </div>

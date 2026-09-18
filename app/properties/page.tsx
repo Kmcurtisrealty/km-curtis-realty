@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { getRecentSales } from "@/lib/data/properties";
+import { getRecentSales, getCurrentListings } from "@/lib/data/properties";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 
 export default function PropertiesPage() {
   const recentSales = getRecentSales();
+  const currentListings = getCurrentListings();
 
   return (
     <div>
@@ -40,6 +41,23 @@ export default function PropertiesPage() {
           </div>
         </Container>
       </section>
+
+      {currentListings.length > 0 ? (
+        <section className="bg-bg-alt py-24">
+          <Container>
+            <SectionHeading
+              eyebrow="Current Listings"
+              title={<span className="text-clay">Pending &amp; Coming Soon</span>}
+              supporting="Homes currently under contract or coming to market soon."
+              align="center"
+              className="mx-auto max-w-4xl md:whitespace-nowrap"
+            />
+            <div className="mt-12">
+              <RotatingPropertySales properties={currentListings} />
+            </div>
+          </Container>
+        </section>
+      ) : null}
 
       <section className="py-24">
         <Container>
