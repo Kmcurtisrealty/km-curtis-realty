@@ -92,10 +92,8 @@ export function SiteFooter() {
         <div className="mt-14 flex flex-col gap-4 border-t border-shell/10 pt-8 text-xs text-shell/50 md:flex-row md:items-center md:justify-between">
           <p>&copy; {year} Krissy Curtis Realty. All rights reserved.</p>
           <p className="max-w-2xl leading-relaxed">
-            Equal Housing Opportunity. This website contains fictional demo property listings for
-            development purposes and does not represent real properties currently or previously
-            for sale. Information is deemed reliable but not guaranteed once live MLS data is in
-            place.
+            Equal Housing Opportunity. Closed sales shown reflect transactions represented by
+            Krissy Curtis. Information is deemed reliable but not guaranteed.
           </p>
         </div>
       </Container>
