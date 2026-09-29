@@ -19,8 +19,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-mist/70 bg-shell/95 backdrop-blur">
       <Container className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3" aria-label="KM Curtis Realty home">
-          <Image src="/images/brand/km-logo.png" alt="" width={44} height={44} priority />
-          <span className="hidden font-display text-lg text-ink sm:block">
+          <Image src="/images/brand/km-logo.png" alt="" width={56} height={56} priority />
+          <span className="hidden font-display text-lg font-semibold text-clay sm:block">
             KM Curtis Realty
           </span>
         </Link>

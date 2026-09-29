@@ -48,7 +48,7 @@ export function SiteFooter() {
           <div>
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-shell/50">Explore</p>
             <ul className="space-y-2 text-sm">
-              {NAV_ITEMS.slice(0, 6).map((item) => (
+              {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-shell/80 hover:text-shell">
                     {item.label}
@@ -59,15 +59,15 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <p className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-shell/50">More</p>
-            <ul className="space-y-2 text-sm">
-              {NAV_ITEMS.slice(6).map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="text-shell/80 hover:text-shell">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-shell/50">Brokerage</p>
+            <ul className="space-y-2 text-sm text-shell/80">
+              <li>Krissy Curtis Realty</li>
+              <li>
+                <a href="tel:+14102638686" className="hover:text-shell">
+                  Office: (410) 263-8686
+                </a>
+              </li>
+              <li>3 Church Circle, Annapolis, MD 21401</li>
             </ul>
           </div>
 
@@ -84,7 +84,6 @@ export function SiteFooter() {
                   (443) 758-3501
                 </a>
               </li>
-              <li>Annapolis, MD</li>
             </ul>
           </div>
         </div>
