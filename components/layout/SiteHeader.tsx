@@ -64,7 +64,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href="/contact" variant="primary">
+          <Button href="/contact" variant="clay">
             Let&rsquo;s Connect
           </Button>
         </div>
