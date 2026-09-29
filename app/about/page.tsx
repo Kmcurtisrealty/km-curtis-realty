@@ -20,7 +20,7 @@ export default function AboutPage() {
         <Container className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div className="relative order-2 aspect-[4/5] overflow-hidden rounded-card shadow-soft md:order-1">
             <Image
-              src="/images/brand/krissy-agent-photo.png"
+              src="/images/brand/krissy-agent-photo.jpg"
               alt="Krissy Curtis"
               fill
               sizes="(min-width: 768px) 45vw, 100vw"
