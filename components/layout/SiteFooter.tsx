@@ -61,7 +61,7 @@ export function SiteFooter() {
           <div>
             <p className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-shell/50">Brokerage</p>
             <ul className="space-y-2 text-sm text-shell/80">
-              <li>Krissy Curtis Realty</li>
+              <li>Coldwell Banker Realty</li>
               <li>
                 <a href="tel:+14102638686" className="hover:text-shell">
                   Office: (410) 263-8686
