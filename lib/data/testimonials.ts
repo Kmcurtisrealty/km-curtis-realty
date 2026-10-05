@@ -1,9 +1,9 @@
 /**
  * Real, verified client reviews sourced from Krissy Curtis's Zillow profile
- * (https://www.zillow.com/profile/Krissy%20M%20Curtis#reviews) — per the
- * master spec (§28, §40) requiring "verified client reviews only." Quoted
- * verbatim from the source; add new entries the same way as more reviews
- * come in.
+ * (https://www.zillow.com/profile/Krissy%20M%20Curtis#reviews) and her
+ * Google Business profile — per the master spec (§28, §40) requiring
+ * "verified client reviews only." Quoted verbatim from the source; add new
+ * entries the same way as more reviews come in.
  */
 
 export interface Testimonial {
@@ -115,6 +115,16 @@ const testimonials: Testimonial[] = [
     location: "Lake Shore, Pasadena, MD",
     source: "Zillow",
     date: "2019-02-07",
+    isDemo: false,
+  },
+  {
+    id: "testimonial-luanne-giessen",
+    quote:
+      "Outstanding also! We cannot say enough positive things about our experience with Krissy! She stayed with us throughout missed opportunities, failed closings, and low inventory. (And, admittedly, a very picky buyer.) She always had a smile, a laugh — and another option! Along with her unimaginable patience and kindness.",
+    name: "Luanne Giessen",
+    location: "Annapolis, MD",
+    source: "Google",
+    date: "2026-10-03",
     isDemo: false,
   },
   {
