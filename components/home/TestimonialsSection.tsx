@@ -11,12 +11,12 @@ export function TestimonialsSection() {
     <section className="bg-ink py-24 text-shell">
       <Container>
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
-          <div className="relative mx-auto aspect-[2/3] w-full max-w-xs overflow-hidden rounded-card shadow-soft">
+          <div className="relative mx-auto aspect-[2/3] w-full max-w-[14rem] overflow-hidden rounded-card shadow-soft">
             <Image
               src="/images/brand/testimonials-photo.jpg"
               alt="Krissy Curtis"
               fill
-              sizes="(min-width: 768px) 30vw, 80vw"
+              sizes="(min-width: 768px) 20vw, 60vw"
               className="object-cover"
             />
           </div>
