@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function AmericanDreamTVPage() {
   return (
     <>
-      <section className="flex min-h-[420px] items-center bg-shell py-20 text-ink">
+      <section className="flex min-h-[420px] items-center border-b border-mist bg-shell py-20 text-ink">
         <Container className="flex max-w-3xl flex-col items-center gap-8 text-center">
           <Image
             src="/images/brand/american-dream-logo.png"

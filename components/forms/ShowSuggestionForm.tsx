@@ -67,7 +67,7 @@ export function ShowSuggestionForm() {
 
       {submitError ? <p className="text-sm text-error">{submitError}</p> : null}
 
-      <Button type="submit" variant="clay" size="lg" disabled={isSubmitting} className="w-full sm:w-auto">
+      <Button type="submit" variant="clay" size="lg" disabled={isSubmitting}>
         {isSubmitting ? "Sending..." : "Send Suggestion"}
       </Button>
     </form>
