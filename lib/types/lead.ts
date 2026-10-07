@@ -27,4 +27,12 @@ export interface PropertyInquirySubmission extends BaseLeadFields {
   interestedInProperty: boolean;
 }
 
-export type LeadSubmission = ContactSubmission | PropertyInquirySubmission;
+export interface ShowSuggestionSubmission {
+  kind: "show-suggestion";
+  name: string;
+  email: string;
+  suggestion: string;
+  sourcePage: string;
+}
+
+export type LeadSubmission = ContactSubmission | PropertyInquirySubmission | ShowSuggestionSubmission;

@@ -42,11 +42,17 @@ export function SiteHeader() {
               {item.children ? (
                 <div
                   className={cn(
-                    "absolute left-1/2 top-full z-10 w-[34rem] -translate-x-1/2 pt-3 transition-opacity duration-150",
+                    "absolute left-1/2 top-full z-10 -translate-x-1/2 pt-3 transition-opacity duration-150",
+                    item.children.length > 3 ? "w-[34rem]" : "w-56",
                     openDropdown === item.label ? "opacity-100" : "pointer-events-none opacity-0",
                   )}
                 >
-                  <div className="grid grid-cols-2 gap-x-2 gap-y-1 rounded-2xl border border-mist bg-shell p-3 shadow-soft-lg">
+                  <div
+                    className={cn(
+                      "gap-x-2 gap-y-1 rounded-2xl border border-mist bg-shell p-3 shadow-soft-lg",
+                      item.children.length > 3 ? "grid grid-cols-2" : "flex flex-col",
+                    )}
+                  >
                     {item.children.map((child) => (
                       <Link
                         key={child.href}

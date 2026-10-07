@@ -28,6 +28,10 @@ export const NAV_ITEMS: NavItem[] = [
       href: `/communities/${c.slug}`,
     })),
   },
-  { label: "American Dream TV", href: "/american-dream-tv" },
+  {
+    label: "American Dream TV",
+    href: "/american-dream-tv",
+    children: [{ label: "ADTV Suggestions", href: "/american-dream-tv/suggestions" }],
+  },
   { label: "About", href: "/about" },
 ];

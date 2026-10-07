@@ -12,24 +12,26 @@ export const metadata: Metadata = {
 export default function AmericanDreamTVPage() {
   return (
     <>
-      <section className="relative flex h-[60vh] min-h-[420px] items-center overflow-hidden bg-ink text-shell">
-        <Image
-          src="/images/brand/american-dream-logo.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-contain p-12 opacity-20"
-          aria-hidden="true"
-        />
-        <Container className="relative max-w-3xl text-center">
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">American Dream TV</p>
-          <h1 className="text-display-lg font-display text-shell">Lifestyle, Culture &amp; Real Estate</h1>
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
-            Krissy Curtis hosts American Dream TV, a nationally broadcast lifestyle and real estate
-            series, bringing that same platform home to cover Annapolis and Chesapeake Bay
-            communities, businesses, and the stories behind the homes she represents.
-          </p>
+      <section className="flex min-h-[420px] items-center bg-ink py-20 text-shell">
+        <Container className="flex max-w-3xl flex-col items-center gap-8 text-center">
+          <div className="rounded-card bg-shell px-8 py-6 shadow-soft-lg">
+            <Image
+              src="/images/brand/american-dream-logo.png"
+              alt="The American Dream logo"
+              width={320}
+              height={81}
+              className="h-auto w-56 sm:w-72"
+            />
+          </div>
+          <div>
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-shell/70">American Dream TV</p>
+            <h1 className="text-display-lg font-display text-shell">Lifestyle, Culture &amp; Real Estate</h1>
+            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-shell/85">
+              Krissy Curtis hosts American Dream TV, a nationally broadcast lifestyle and real estate
+              series, bringing that same platform home to cover Annapolis and Chesapeake Bay
+              communities, businesses, and the stories behind the homes she represents.
+            </p>
+          </div>
         </Container>
       </section>
 

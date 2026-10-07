@@ -2,6 +2,7 @@ import { createElement } from "react";
 import { LEAD_NOTIFICATION_EMAIL, RESEND_FROM_EMAIL, getResend } from "@/lib/email/resend";
 import { ContactEmail } from "@/lib/email/templates/ContactEmail";
 import { PropertyInquiryEmail } from "@/lib/email/templates/PropertyInquiryEmail";
+import { ShowSuggestionEmail } from "@/lib/email/templates/ShowSuggestionEmail";
 import type { LeadSubmission } from "@/lib/types/lead";
 
 export interface SubmitLeadResult {
@@ -29,13 +30,21 @@ export async function submitLead(submission: LeadSubmission): Promise<SubmitLead
         subject: `New website inquiry — ${submission.firstName} ${submission.lastName}`,
         react: createElement(ContactEmail, { submission }),
       });
-    } else {
+    } else if (submission.kind === "property-inquiry") {
       await resend.emails.send({
         from: RESEND_FROM_EMAIL,
         to: LEAD_NOTIFICATION_EMAIL,
         replyTo: submission.email,
         subject: `Property inquiry — ${submission.propertyAddress}`,
         react: createElement(PropertyInquiryEmail, { submission }),
+      });
+    } else {
+      await resend.emails.send({
+        from: RESEND_FROM_EMAIL,
+        to: LEAD_NOTIFICATION_EMAIL,
+        replyTo: submission.email,
+        subject: `New show suggestion — ${submission.name}`,
+        react: createElement(ShowSuggestionEmail, { submission }),
       });
     }
   } catch (error) {
