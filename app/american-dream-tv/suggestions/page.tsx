@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ShowSuggestionForm } from "@/components/forms/ShowSuggestionForm";
@@ -12,6 +13,16 @@ export default function ADTVSuggestionsPage() {
   return (
     <section className="py-24">
       <Container className="max-w-2xl">
+        <div className="mb-10 flex justify-center">
+          <Image
+            src="/images/brand/american-dream-logo.png"
+            alt="The American Dream logo"
+            width={400}
+            height={101}
+            priority
+            className="h-auto w-64 sm:w-80"
+          />
+        </div>
         <SectionHeading
           eyebrow="Got an Idea?"
           title="Suggest a Show"
