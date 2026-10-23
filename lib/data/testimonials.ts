@@ -118,6 +118,16 @@ const testimonials: Testimonial[] = [
     isDemo: false,
   },
   {
+    id: "testimonial-william-olischar",
+    quote:
+      "Excellent experience purchasing our new home and selling our current home. Communication was always timely and all concerns handled with a positive outcome.",
+    name: "William Olischar",
+    location: "Crownsville, MD",
+    source: "Google",
+    date: "2026-10-23",
+    isDemo: false,
+  },
+  {
     id: "testimonial-luanne-giessen",
     quote:
       "Outstanding also! We cannot say enough positive things about our experience with Krissy! She stayed with us throughout missed opportunities, failed closings, and low inventory. (And, admittedly, a very picky buyer.) She always had a smile, a laugh — and another option! Along with her unimaginable patience and kindness.",
