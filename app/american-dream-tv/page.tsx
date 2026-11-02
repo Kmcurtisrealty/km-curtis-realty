@@ -38,7 +38,11 @@ export default function AmericanDreamTVPage() {
         <Container className="max-w-4xl">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-marsh">Latest Episode</p>
           <h2 className="mb-6 font-display text-2xl text-ink">Annapolis Sails</h2>
-          <YouTubeEmbed videoId="cSpMDEqz_H4" title="American Dream TV — Annapolis Sails" />
+          <YouTubeEmbed
+            videoId="cSpMDEqz_H4"
+            title="American Dream TV — Annapolis Sails"
+            thumbnailSrc="/images/brand/adtv-episode-1-thumbnail.jpg"
+          />
           <p className="mt-4 text-sm text-ink/60">Featuring SailTime Annapolis and Framed to Finish.</p>
         </Container>
       </section>
