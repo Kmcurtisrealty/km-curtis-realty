@@ -1183,6 +1183,38 @@ const properties: Property[] = [
     listingBrokerage: DEMO_BROKERAGE,
     soldAt: "2026-10-01",
   },
+  {
+    id: "prop-032",
+    mlsId: "SOLD-2026-05",
+    slug: "57-gentry-court-annapolis",
+    status: "sold",
+    isDemo: false,
+    featured: true,
+    address: "57 Gentry Court",
+    city: "Annapolis",
+    state: "MD",
+    zip: "21403",
+    price: 300000,
+    soldPrice: 300000,
+    beds: 3,
+    baths: 4,
+    sqft: 1960,
+    propertyType: "townhouse",
+    description:
+      "A townhome in Annapolis, represented by Krissy Curtis to a successful closing.",
+    images: [
+      { src: "/images/properties/57-gentry-court-annapolis-1.jpg", alt: "Front exterior of 57 Gentry Court, Annapolis", isPrimary: true },
+    ],
+    features: [{ category: "Property", items: ["Townhome"] }],
+    waterfront: false,
+    tags: [],
+    lat: 38.9701,
+    lng: -76.4886,
+    approximateLocationOnly: true,
+    listingAgent: DEMO_AGENT,
+    listingBrokerage: DEMO_BROKERAGE,
+    soldAt: "2026-11-01",
+  },
 ];
 
 // ---------------------------------------------------------------------------
