@@ -18,6 +18,16 @@ export interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
+    id: "testimonial-adnan",
+    quote:
+      "This was my second time getting a house from Krissy and my experience has been exceptionally well. I would highly recommend Krissy because she is the best in the business",
+    name: "Adnan",
+    location: "Annapolis, MD",
+    source: "Google",
+    date: "2026-11-12",
+    isDemo: false,
+  },
+  {
     id: "testimonial-frank-yocum",
     quote:
       "Krissy did an outstanding job! very responsive, not once did i have to re-text or re-send an email. Responses were usually within an hour. I have bought and sold multiple houses with Krissy as my agent. I would not hesitate to call her for anything.",
