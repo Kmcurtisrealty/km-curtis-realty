@@ -25,10 +25,14 @@ export function SiteFooter() {
               <Image src="/images/brand/km-logo-white.png" alt="KM Curtis Realty" width={44} height={44} />
               <span className="font-display text-lg">Krissy Curtis Realty</span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-shell/70">
-              Real estate, Maryland living, and your next chapter — serving Annapolis and the
-              Chesapeake Bay region.
-            </p>
+            <div className="mt-4 inline-flex rounded-card bg-shell p-3">
+              <Image
+                src="/images/brand/luxury-home-marketing-member.png"
+                alt="Institute for Luxury Home Marketing Member"
+                width={80}
+                height={81}
+              />
+            </div>
             <div className="mt-6 flex items-center gap-4">
               {SOCIAL_LINKS.map(({ label, href, Icon }) => (
                 <a
